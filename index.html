@@ -4,6 +4,12 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <title>FBL</title>
+<meta name="theme-color" content="#0b0d10">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="FBL">
+<link rel="apple-touch-icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAIAAADdvvtQAAAHYUlEQVR4nO3dWWxUVRjA8Znp0JUuFNsArUiqNkDSVimJFDXqi6BEDQZwQVySRmMgRjEYHxQNkpjgg4KRB4MmApqGiC8gBHCLZZEgoJQ1hYKFElqwe53SZepDk0mFOnPv/c6cc+fO//fKpfPR++85d26HGX9Wdp4PcCpgegAkNgKCCAFBhIAgQkAQISCIEBBECAgiBAQRAoJI0NQDb1jZYuqhvap6VaH+B/Xr/F0Y0WijLSYdAY3ajZEfF28z8n2OY0A3/3uIRhtt3/x4BTTyH0A3BsX7RKgPiHRcKH4nRXFAkUFJx4XicXaUBUQ6iULtmVJzI5F6EkjkHCm5q6IgIOpJOAobkm5hwxOQToKSnz7RCkQ9iW743EnWIecBUY83CBtyGBC/1fIeZ+dUtIWx/HiD7msgNi/vcbyR2Q6IerzKWUO8IhEi9gJi+fE2B4uQjYB45pU8rJ9r21sYy4+32T2/XANBxGpAXP0kD1tXQqxAECEgiFgKiP0r2VjfxViBIEJAECEgiMQOiAug5GTxMogVCCIEBBECgggBQYSAIEJAECEgiBAQRAgIIgQEEQKCCAFBhIAgQkAQISCIEBBECAgiBAQRAoIIAUGEgCBCQBAhIIgQEEQICCIEBBECgggBQYSAIEJAECEgiBAQRAgIIkH9D/lg5QvPzfsoTl9894H1W/a8r/ahw+GBgfBAX38o1NvR1fN3a2dTS+v5ppbT5y4dutbe6HhUK8O8tubOf3o7HD+EBgYCSjiBQDA1EEwNpo/NGFcwbkqJrzLyR9faG38/ua32yKbm1gaDExrEFiZyS97kubOXrl66v3r++tyxyfg2kgSkgN8fmFW24L1Xfi4prox9tLcQkDI5WQVvLN5SVDjV9CBaEZBKGWnZLz/5ecCfYnoQfQhIsaLCqVXlC01PoQ8BqXff3YtNj6APT+NvdPOtF78/kJmeO6mgdOb0Jx6ofD6Ykhr9K9x+68yMtOzQ9a54jukWLg3IVTfQhobCPaG2+saD9Y0HDx7f+uaSrWljMqMcH/CnTCwobbh0WNuEBrGF2dNw6fCu/Z/FPCw/p0jDMG5AQLYdPbMz5jHRlygvISDbunquxTymrz+kYRI3ICDbsjPHxzymvbtZwyRuQEC2VZTOiX5AeGjw4pXjeoYxjoDsmTLprrn3Lot+zIlzv/T2deuZxziXPo13Fb8/kJGWM6mgtHL6Yw/NfCnmfSArT9M8w6UBrXur3sHf+mrb8tqjm408dMS+P2tOX9grnCGBsIWpVFf/w+bvV5ieQiuXrkAJZ2Cwb8fetdtrPw6HB0zPohUBKdDa2fRpzZLkeeY1EluYAvk5Re9W766evz55foMRQUBqBALBWWULPli6b8a0eaZn0YqAVEobk/nqwi9nlS0wPYg+BKSY3+d/8fFPbptYbnoQTbiIvtGoL0VKHZORlTGuqHBqRemc2eWL0lKzonyFYErq4kfXfPjFI0O+oXhO6gouDchVLyjz+Xx9/aG+/lBb5+XjZ3/auXfdsqc3Tp5QFuX4kqIZ00ruP9nwq7YJTWELs621s2ntN8/EfMVqVflTeuYxi4Cc6OhuOXBsS/RjSm+r0jOMWQTk0NmLh6IfMD63ODM9V88wBhGQQyELl2hjM/M1TGIWATmUlTEu5jHRn6x5AwE5dMfke2Ie09/fq2ESswjIibzsCVUWbjd3dLdoGMYsArItP7f49WdrYm5P7V1XQtc79YxkkEtvJLpNajA9KzO/uHBaRemcqopFVv7b15m/9skfV/LyyNUbHr5w+Q/5DNER0I2EL2mNOFj3nZKv43JsYXFxqflk3dkfTU+hAwGpFx4a3LRjxdBQ2PQgOhCQel/vePtcrPvUnsE1kEp9A70bty3/re5b04PoQ0DKHKvfU7PrnZbW86YH0YqApDp7rh4+tb32yObGK3WmZzGAgKwKhwcGBvtD17t6Qm2tHU1X2y5cbD7R0HS4qflUMrzy8P/4s7Lzoh+xYWWLz+erXpWMb8Oe5Kycep6FQYSAIEJAECEgiBAQRAgIIgQEEQKCCAFBhIAgQkAQISCIEBBECAgiBAQRAoIIAUGEgCBCQBAhIIgQEEQICCIEBBECgggBQYSAIEJAECEgiBAQRAgIIgQEEQKCCAFBhIAgEjug4Xc4G363MyQPi29tyAoEEQKCCAFBxFJAXAYlG+vv7cwKBBECgojVgNjFkoetzyZgBYKI7YBYhLzN7vm1ERCft5I8rJ9reysQV0Le5uCTmbgGgojtgFiEvMrZB8M5WYFoyHscf6ygaAujIW+QnEeHAfGMzHucnVPnKxAbmTcIPxNXtIXRUKKTf6Jy7E9ttjiEcA5opuqsKbgPFJmApShRKPyZV3MjkYYSiNodQ8EWNhLbmZvF4+woDsj330WIjFwifidFfUDDyMgl4n0i4hWQb7TrIUrSRts3P44BRYx6ZU1Myhn5PusIKILnaNpo+/nUGtBIxKSckUXdWEDwBl6RCBECgggBQYSAIEJAECEgiBAQRAgIIgQEkX8BU+A4Dylf+ucAAAAASUVORK5CYII=">
 <style>
 :root{
   --bg:#0b0d10; --bg2:#121519; --card:#181c22; --card2:#1f242c; --line:#262b33;
@@ -11,6 +17,10 @@
   --cal:#ff8a3d; --prot:#4fd1c5; --carb:#ffd166; --fat:#ef476f; --fiber:#7c9cff; --muscu:#a78bfa;
   --gold:#ffd23f;
   font-family:-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;
+}
+body.theme-light{
+  --bg:#f4f5f7; --bg2:#ffffff; --card:#ffffff; --card2:#eceef2; --line:#dde1e7;
+  --txt:#14171c; --txt-dim:#636b78;
 }
 *{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent;}
 html,body{height:100%;background:var(--bg);color:var(--txt);}
@@ -77,9 +87,14 @@ h1,h2,h3{font-weight:800;letter-spacing:-.02em;}
 .btn-danger{background:transparent;color:var(--fat);border:1px solid var(--fat);}
 .btn-block{width:100%;text-align:center;}
 .tag{font-size:10px;padding:3px 8px;border-radius:100px;background:var(--card2);color:var(--txt-dim);}
+.ex-ic{display:inline-flex;width:26px;height:26px;border-radius:8px;align-items:center;justify-content:center;font-weight:800;color:#0b0d10;margin-right:8px;flex-shrink:0;font-size:12px;}
 
 /* progress ring */
 .ring-wrap{position:relative;width:150px;height:150px;margin:0 auto;}
+.ring-wrap-sm{width:104px;height:104px;margin:0;flex-shrink:0;}
+.ring-wrap-sm .ring-inner{inset:7px;}
+.ring-wrap-sm .ring-inner .val{font-size:18px;}
+.ring-wrap-sm .ring-inner .lbl{font-size:9px;}
 .ring{width:100%;height:100%;border-radius:50%;display:flex;align-items:center;justify-content:center;}
 .ring-inner{position:absolute;inset:10px;background:var(--card);border-radius:50%;display:flex;flex-direction:column;align-items:center;justify-content:center;}
 .ring-inner .val{font-size:26px;font-weight:800;}
@@ -130,9 +145,12 @@ h1,h2,h3{font-weight:800;letter-spacing:-.02em;}
   transition:background .15s,border-color .15s;
 }
 .set-row .rest-chk:checked{background:var(--muscu);border-color:var(--muscu);}
-.set-row .rest-chk:checked::after{
+.set-row .rest-chk::after{
   content:'✓';position:absolute;inset:0;display:flex;align-items:center;justify-content:center;
-  color:#0b0d10;font-size:14px;font-weight:900;
+  color:var(--txt-dim);font-size:14px;font-weight:900;opacity:.6;
+}
+.set-row .rest-chk:checked::after{
+  color:#0b0d10;opacity:1;
 }
 .set-row input{padding:8px 4px;text-align:center;border-radius:8px;background:var(--card2);border:1px solid var(--line);font-size:13px;}
 .set-row .idx{font-size:11px;color:var(--txt-dim);text-align:center;}
@@ -172,6 +190,7 @@ h1,h2,h3{font-weight:800;letter-spacing:-.02em;}
 
 canvas.chart{width:100%;height:140px;}
 </style>
+<link rel="manifest" href="data:application/manifest+json;base64,eyJuYW1lIjogIkZCTCIsICJzaG9ydF9uYW1lIjogIkZCTCIsICJzdGFydF91cmwiOiAiLi8iLCAic2NvcGUiOiAiLi8iLCAiZGlzcGxheSI6ICJzdGFuZGFsb25lIiwgImJhY2tncm91bmRfY29sb3IiOiAiIzBiMGQxMCIsICJ0aGVtZV9jb2xvciI6ICIjMGIwZDEwIiwgImljb25zIjogW3sic3JjIjogImRhdGE6aW1hZ2UvcG5nO2Jhc2U2NCxpVkJPUncwS0dnb0FBQUFOU1VoRVVnQUFBTUFBQUFEQUNBSUFBQURkdnZ0UUFBQUhZVWxFUVZSNG5PM2RXV3hVVlJqQThabnAwSlV1Rk5zQXJVaXFOa0RTVmltSkZEWHFpNkJFRFFad1FWeVNSbU1nUmpFWUh4UU5rcGpnZzRLUkI0TW1BcHFHaUM4Z0JIQ0xaWkVnb0pRMWhZS0ZFbHF3ZTUzU1plcERrMG1GT25Qdi9jNmNjK2ZPLy9mS3BmUFIrKzg1ZDI2SEdYOVdkcDRQY0NwZ2VnQWtOZ0tDQ0FGQmhJQWdRa0FRSVNDSUVCQkVDQWdpQkFRUkFvSkkwTlFEYjFqWll1cWh2YXA2VmFIK0IvWHIvRjBZMFdpakxTWWRBWTNhalpFZkYyOHo4bjJPWTBBMy8zdUlSaHR0My94NEJUVHlIMEEzQnNYN1JLZ1BpSFJjS0g0blJYRkFrVUZKeDRYaWNYYVVCVVE2aVVMdG1WSnpJNUY2RWtqa0hDbTVxNklnSU9wSk9Bb2JrbTVod3hPUVRvS1NuejdSQ2tROWlXNzQzRW5XSWVjQlVZODNDQnR5R0JDLzFmSWVaK2RVdElXeC9IaUQ3bXNnTmkvdmNieVIyUTZJZXJ6S1dVTzhJaEVpOWdKaStmRTJCNHVRallCNDVwVThySjlyMjFzWXk0KzMyVDIvWEFOQnhHcEFYUDBrRDF0WFFxeEFFQ0VnaUZnS2lQMHIyVmpmeFZpQklFSkFFQ0VnaU1RT2lBdWc1R1R4TW9nVkNDSUVCQkVDZ2dnQlFZU0FJRUpBRUNFZ2lCQVFSQWdJSWdRRUVRS0NDQUZCaElBZ1FrQVFJU0NJRUJCRUNBZ2lCQVFSQW9JSUFVR0VnQ0JDUUJBaElJZ1FFRVFJQ0NJRUJCRUNnZ2dCUVlTQUlFSkFFQ0VnaUJBUVJBZ0lJa0g5RC9sZzVRdlB6ZnNvVGw5ODk0SDFXL2E4ci9haHcrR0JnZkJBWDM4bzFOdlIxZk4zYTJkVFMrdjVwcGJUNXk0ZHV0YmU2SGhVSzhPOHR1Yk9mM283SEQrRUJnWUNTamlCUURBMUVFd05wby9OR0Zjd2JrcUpyekx5UjlmYUczOC91YTMyeUtibTFnYURFeHJFRmlaeVM5N2t1Yk9Ycmw2NnYzcisrdHl4eWZnMmtnU2tnTjhmbUZXMjRMMVhmaTRwcm94OXRMY1FrREk1V1FWdkxONVNWRGpWOUNCYUVaQktHV25aTHovNWVjQ2ZZbm9RZlFoSXNhTENxVlhsQzAxUG9ROEJxWGZmM1l0Tmo2QVBUK052ZFBPdEY3OC9rSm1lTzZtZ2RPYjBKeDZvZkQ2WWtocjlLOXgrNjh5TXRPelE5YTU0anVrV0xnM0lWVGZRaG9iQ1BhRzIrc2FEOVkwSER4N2YrdWFTcldsak1xTWNIL0NuVEN3b2JiaDBXTnVFQnJHRjJkTnc2ZkN1L1ovRlBDdy9wMGpETUc1QVFMWWRQYk16NWpIUmx5Z3ZJU0RidW5xdXhUeW1yeitrWVJJM0lDRGJzalBIeHp5bXZidFp3eVJ1UUVDMlZaVE9pWDVBZUdqdzRwWGplb1l4am9Ec21UTHBycm4zTG90K3pJbHp2L1QyZGV1Wnh6aVhQbzEzRmI4L2tKR1dNNm1ndEhMNll3L05mQ25tZlNBclQ5TTh3NlVCclh1cjNzSGYrbXJiOHRxam00MDhkTVMrUDJ0T1g5Z3JuQ0dCc0lXcFZGZi93K2J2VjVpZVFpdVhya0FKWjJDd2I4ZmV0ZHRyUHc2SEIwelBvaFVCS2REYTJmUnB6WkxrZWVZMUVsdVlBdms1UmU5Vzc2NmV2ejU1Zm9NUlFVQnFCQUxCV1dVTFBsaTZiOGEwZWFabjBZcUFWRW9iay9ucXdpOW5sUzB3UFlnK0JLU1kzK2QvOGZGUGJwdFlibm9RVGJpSXZ0R29MMFZLSFpPUmxUR3VxSEJxUmVtYzJlV0wwbEt6b255RllFcnE0a2ZYZlBqRkkwTytvWGhPNmdvdURjaFZMeWp6K1h4OS9hRysvbEJiNStYalozL2F1WGZkc3FjM1RwNVFGdVg0a3FJWjAwcnVQOW53cTdZSlRXRUxzNjIxczJudE44L0VmTVZxVmZsVGV1WXhpNENjNk9odU9YQnNTL1JqU20rcjBqT01XUVRrME5tTGg2SWZNRDYzT0RNOVY4OHdCaEdRUXlFTGwyaGpNL00xVEdJV0FUbVVsVEV1NWpIUm42eDVBd0U1ZE1ma2UySWUwOS9mcTJFU3N3aklpYnpzQ1ZVV2JqZDNkTGRvR01Zc0FySXRQN2Y0OVdkclltNVA3VjFYUXRjNzlZeGtrRXR2SkxwTmFqQTlLek8vdUhCYVJlbWNxb3BGVnY3YjE1bS85c2tmVi9MeXlOVWJIcjV3K1EvNURORVIwSTJFTDJtTk9GajNuWkt2NDNKc1lYRnhxZmxrM2RrZlRVK2hBd0dwRng0YTNMUmp4ZEJRMlBRZ09oQ1FlbC92ZVB0Y3JQdlVuc0Uxa0VwOUE3MGJ0eTMvcmU1YjA0UG9RMERLSEt2ZlU3UHJuWmJXODZZSDBZcUFwRHA3cmg0K3RiMzJ5T2JHSzNXbVp6R0FnS3dLaHdjR0J2dEQxN3Q2UW0ydEhVMVgyeTVjYkQ3UjBIUzRxZmxVTXJ6eThQLzRzN0x6b2greFlXV0x6K2VyWHBXTWI4T2U1S3ljZXA2RlFZU0FJRUpBRUNFZ2lCQVFSQWdJSWdRRUVRS0NDQUZCaElBZ1FrQVFJU0NJRUJCRUNBZ2lCQVFSQW9JSUFVR0VnQ0JDUUJBaElJZ1FFRVFJQ0NJRUJCRUNnZ2dCUVlTQUlFSkFFQ0VnaUJBUVJBZ0lJZ1FFRVFLQ0NBRkJoSUFnRWp1ZzRYYzRHMzYzTXlRUGkyOXR5QW9FRVFLQ0NBRkJ4RkpBWEFZbEcrdnY3Y3dLQkJFQ2dvalZnTmpGa29ldHp5WmdCWUtJN1lCWWhMek43dm0xRVJDZnQ1SThySjlyZXlzUVYwTGU1dUNUbWJnR2dvanRnRmlFdk1yWkI4TTVXWUZveUhzY2Y2eWdhQXVqSVcrUW5FZUhBZkdNekh1Y25WUG5LeEFibVRjSVB4Tlh0SVhSVUtLVGY2Snk3RTl0dGppRWNBNW9wdXFzS2JnUEZKbUFwU2hSS1B5WlYzTWprWVlTaU5vZFE4RVdOaExibVp2RjQrd29Ec2ozMzBXSWpGd2lmaWRGZlVERHlNZ2w0bjBpNGhXUWI3VHJJVXJTUnRzM1A0NEJSWXg2WlUxTXlobjVQdXNJS0lMbmFOcG8rL25VR3RCSXhLU2NrVVhkV0VEd0JsNlJDQkVDZ2dnQlFZU0FJRUpBRUNFZ2lCQVFSQWdJSWdRRWtYOEJVK0E0RHlsZit1Y0FBQUFBU1VWT1JLNUNZSUk9IiwgInNpemVzIjogIjE5MngxOTIiLCAidHlwZSI6ICJpbWFnZS9wbmcifSwgeyJzcmMiOiAiZGF0YTppbWFnZS9wbmc7YmFzZTY0LGlWQk9SdzBLR2dvQUFBQU5TVWhFVWdBQUFnQUFBQUlBQ0FJQUFBQjdHa090QUFBVnMwbEVRVlI0bk8zZGU1Q2RaWDNBOGZja205MWNXQklJeElSTFNMZ0plSUdrUlM0UzZyWGdCUjBWQ29MVjZnQzFWbTExckg5VXBlaTBvMU5ycVRNV1JSd3JMUXdDdFFyVUVZSW95RTFBSUFxRUJMa2tKWWtrSVZleXllNW1MLzFqMnhCRHN0bmI4ejd2ZVgrZnozOHl6dk0rYzg3WjMvYzg3em5aYlV4cG4xWUFFTSs0M0JzQUlBOEJBQWhLQUFDQ0VnQ0FvQVFBSUNnQkFBaEtBQUNDRWdDQW9BUUFJQ2dCQUFoS0FBQ0NFZ0NBb0FRQUlDZ0JBQWhLQUFDQ0VnQ0FvQVFBSUNnQkFBaEtBQUNDRWdDQW9BUUFJQ2dCQUFoS0FBQ0NFZ0NBb0FRQUlDZ0JBQWhLQUFDQ0VnQ0FvQVFBSUtpVzNCdW9vZTljc2liM0ZxQ2VMdnpTak54YnFKWEdsUFpwdWZmUXhNeDZ5RTRWUmt3QWhzZkVoNHJUZzZFVGdMMHo5S0ZKaWNIZ0JHQ1B6SDJvRFNYWUxRSFlsYmtQTmFZRU94T0FseGo5RUlRTURCQ0FzWi83WGx1UWlKL1dzUlU2QUdQeVlncitBb0s4L0JTUFJ0QUFqT1pGRS9hMUF0WG5SM3RZd2dWZ1pLK1BnSzhNYUhaKzJQY3FVQUJHOEdvSTlWS0F1dkt6dnljaEFqRGNwei9JY3cvUkdBVzdxSDhBaHZXVTEvNzVCc3lFSGVvY2dLRS96ZlYram9IZE1pTHFHUURQS3pCRWtjZEZEUU13eEtlemZzOGxNR0l4NTBiZEFqQ1VaN0ZtVHlFd1ZxSU5rUG9FSUdiQWdiRVZhcExVSkFEUnVnMGtGV1NrMUNFQWUzMnFhdkE4QWVXci9XeHA3Z0FFcVRTUVM3MkhUQk1Ib1BaeEJpcWlydE5tWE80TmpGQmRudytnZ3ZZNlQ1cjB6MGsxWlFCTWY2Qmt0V3hBODkwQ0d2eFJOdnFCcE9vMGdwcnNCRkNuaHg1b1JvUFBtZVk2QnpSVEFFeC9vQXBxMDRDbUNZRHBEMVJIUFJyUUhBRXcvWUdxcVVFRG11QkQ0RUVlUjZNZnlLNTVaMVRWVHdETis4Z0NRUXd5aXlwK0RxaDBBRXgvb0NrMGFRT3FHd0RUSDJnaXpkaUE2Z1lBZ0tRcUdnQnYvNEdtMDNTSGdDb0d3UFFIbWxSek5hQnlBVEQ5Z2FiV1JBMm9YQUQyeFBRSG1rV3p6S3RxQldCUGVXeVdSeE5nd0o2bVZxVU9BUlVLUUtVZUY0QkVxalBycWhJQXQvNkJtcW4raHdGVkNjQ2VtUDVBODZyNEJLdEVBTno2QitxcXloOEdWQ0lBQUpRdmZ3QzgvUWZxcmJLSGdNd0JNUDJCQ0tyWmdQd25BQUN5eUJrQWIvK0JPQ3A0Q0hBQ0FBZ3FXd0M4L1FlaXFkb2hvRm9uQU5NZnFMZEtUYms4QWNqKzVTZUFTc2t5RlN0MEFxaFVHQUVTcWM2c3l4QUFiLzhCWHE3ODJWaVZFMEIxa2dpUVdrVW1YdGtCOFBZZllFOUtucENWT0FGVUpJWUFwYW5DM0t0RUFBQW9YNmtCY1A4SFlIQmx6c244SjRBcW5JTUF5cGQ5K3BVWEFHLy9BWWFpdEdtWitRU1FQWUFBR2VXZGdmbHZBUUdRUlVrQmNQOEhZT2pLbVprNVR3RHUvd0JrbklSdUFRRUVWVVlBM1A4QkdLNFNKbWUyRTREN1B3QURjczFEdDRBQWdoSUFnS0NTQjhBSEFBQWprM3ArNWprQitBQUFZR2RacHFKYlFBQkJDUUJBVUFJQUVGVGFBUGdFR0dBMGtrN1JEQ2NBbndBRHZGejVzOUV0SUlDZ0JBQWdLQUVBQ0VvQUFJSVNBSUNnRWdaZ3Q5OWU4aFVnZ0QzWjdZUk05MDFRSndDQW9BUUFJQ2dCQUFoS0FBQ0NFZ0NBb0FRQUlDZ0JBQWhLQUFDQ0VnQ0FvQVFBSUNnQkFBaEtBQUNDRWdDQW9BUUFJQ2dCQUFoS0FBQ0NFZ0NBb0FRQUlDZ0JBQWhLQUFDQ0VnQ0FvQVFBSUNnQkFBaEtBQUNDRWdDQW9BUUFJQ2dCQUFoS0FBQ0NFZ0NBb0FRQUlDZ0JBQWhLQUFDQ0VnQ0FvQVFBSUNnQkFBaEtBQUNDRWdDQW9BUUFJQ2dCQUFoS0FBQ0NFZ0NBb0FRQUlDZ0JBQWhLQUFDQ0VnQ0FvQVFBSUNnQkFBaEtBQUNDRWdDQW9BUUFJQ2dCQUFoS0FBQ0NFZ0NBb0FRQUlDZ0JBQWhLQUFDQ0VnQ0FvQVFBSUNnQkFBaEtBQUNDRWdDQW9BUUFJQ2dCQUFoS0FBQ0NFZ0NBb0FRQUlDZ0JBQWhLQUFDQ0VnQ0FvQVFBSUNnQkFBaEtBQUNDRWdDQW9BUUFJQ2dCQUFoS0FBQ0NFZ0NBb0FRQUlDZ0JBQWhLQUFDQ0VnQ0FvQVFBSUtpVzNCdG9NaE5hMnI3NXQ4L2wza1VHRHo3K295dCtjUEhZcmxtcEI3T3Z2N2UzdDZlM2IzdHY3L2JldnA3ZTN1MWQyN2R1N2R5OHJYUFQxczVOSFoyYk9yWnQyTGo1ZCtzMnI5eXdhZVg2emFzNnRtM0l2ZVdSU1BxWTMvWElOVmZkL0tsRWk1T0NBRUJSRk1XNHh2aHhMZU1uRkcxRC9QOTNkWGVzV3J0MDVkb2xLMWMvc1dMTjR1ZWVmMnhMY3lhQnlBUUFScUt0ZGNyY2crZlBQWGord1Avc0wvcFhyVm42NVBKN2x5Ni9kK255ZTEvc2VDSHY5bUFvQkFER1FLTm9IRHpqbUlObkhQUEdFei9TMzkvMzFITVBQUGo0alE4OWNmT21MV3R5YnczMlNBQmdqRFVhNDQ2YWZmSlJzMDkrLzVuLzhNU3pkLy8wL2lzZS9lMVArNHYrM1B1Q1hRa0FwTkpvakR2dThOT1BPL3owNTEvNDdjSmZYbkhQb210Nys3Ym4zaFM4eE5kQUlibVpCeHoxd1hmKzA2VWYvZmx4aC85UjdyM0FTd1FBU2pMcmdLTS8vWUViUHZZbjM5dG44djY1OXdKRklRQlFzdm5IdlAyU2kyOC8vUCsvUGdRWkNRQ1ViZjk5RC83c245MTAyZ25uNTk0STBRa0FaTkF5dnZWRDc3cHN3YndQNU40SW9Ra0E1TkVvR2g4ODYydW5Ibjl1N28wUWx3QkFObzJpOGFHei9ubk9RZk55YjRTZ0JBQnlHajl1d2tmUHZuSlMyNzY1TjBKRUFnQ1pIVEJ0OXZsdiszTHVYUkNSQUVCK0o3LzI3TU5tSFo5N0Y0UWpBSkJmbzJpYzg1WkxjdStDY0FRQUt1R1l1UXVPbW4xeTdsMFFpd0JBVlp3Ky8wOXpiNEZZQkFDcTRnK09POHZYZ1NpVEFFQlZ0TFpNbkgvc08zTHZna0Q4UFFEcWFRUi9vTHhSTkNhMjdUTnA0dFRKYmUwSDdqOW56cXdURHB0MS9ORnpUbTF0bVpob2t5OTM3TndGOXl5NnRyVExFWndBd1AvcEwvcTNkYjI0cmV2RjlVV3hZczBUanl6NVNWRVVreWRPTytXMTU3enh4QS9Qbkg1a0NYczRaczVwSlZ3RkJnaEFoWXpnVFN1cGJlM2NlUHNEVjk3NTBGWHZQUDNUYjMvOUo4ZU5TL3NqTTYxOTVpdW1IN0Y2M2ROSnJ3SURmQVlBZTlmVDIvMmpuMy9sYS85eGRuZFBaK3BySFRMajJOU1hnQUVDQUVPMWRQbTkzL3JQQy92NmVwSmVaY2IrYzVPdUR6c0lBQXpEYjU1YytOTUhya3g2Q1FHZ05BSUF3L1Bmdjdoc2ErZkdkT3RQbnpvNzNlS3dNd0dBNGRuYXVmR2VSZDlQdC83a2llM3BGb2VkQ1FBTTIyTlAveXpkNHEwVEpxZGJISFltQURCc1R5Ni9yNmUzTzlIaWJhMVRFcTBNdXhBQUdMYnRQVjJiTzlZbVdyek1mM2hNY0FJQUkvRml4N3BFSzZjN1c4QXVCQUJHWWx2bnBrUXJsL0J2eldDQUFNQklUSm80TmRIS1c1S2RMV0FYQWdBajBUNWxlcUtWTjIxWmsyaGwySVVBd0xDMWpHL2RkOHFCaVJaZnZkNXZncU1rQWdERGR0VHNrMXJHdHlaYWZPV2FKWWxXaGwwSUFBemJxNDU0VTdyRm4xbjVVTHJGWVdjQ0FNTXpxYTM5OVNlY2wyanhqUzgrdjJiOXM0a1doMTBJQUF6UG1hLy9SUHZrVko4QUwxcDZTNktWNGVVRUFJYmhtRG1ublhIS3g5S3QvK0RpRzlNdERyc1FBQmlxT1FmTisvaDUvNTd1NDkvVjY1NStjdG05aVJhSGwvTTNnV0h2eGpYR24zSHFYNzc3RFo5Tk4vMkxvbGo0eTIvMUYvM3Axb2RkQ0FBTVpsSmIrK3RlL2Q0M252aVIxSCtxOTRXTno5Mno2TnFrbDRCZENFQ0ZMSmgzd1lKNUYrVGV4ZTlaZU4vbDE5OTJhZTVkbEtSUk5OcGFwMHlhdU8ra3R2WUQ5NXR6Mkt6WHpqbm9oR1Btbk5ZNllWSUpWNzl1NGVmOUdqaEtKZ0RVVXdWck9vZ0hIdi9oSTB0K2tuc1hoT05EWU1oc3hab25ycnJwVTdsM1FVUUNBRGx0N2R6MHI5ZDlxR3Y3MXR3YklTSUJnR3c2dG0zNCtyWG5yOTJ3TFBkR0NNcG5BSkRIaHMyckxydm0zRlZybCtiZUNIRUpBR1N3Yk5VamwxLy9rZldiVitiZUNLRUpBSlNxdTZmenBqditjZUY5Myt6cjc4MjlGNklUQUNqUG8wL2QvdjFiUHJkNi9UTzVOd0pGSVFCUWdyNituZ2NYMzNqTFBkOTRidlhqdWZjQ0wvRXRJRWh1MGRKYmYvYmdkMWVzWHB4N0kvQjduQUFndWZuSHZtUCtzZTlZdjJuRkhROWRkZGZEVjcrNGRWM3VIVUZST0FGQWFmYWZlc2g3My9TNXIzN3ExK2VkOGZmcC9xWThESjBBUUtsYXhyZSs1YVNMdi96SkI4ODQ1V1BqeGptQ2s1TUFRQVp0RXlhZjg5WkxQMy9oclRPbkg1bDdMOFFsQUpETjdKbXYrY0pGdDUxNDNMdHpiNFNnQkFCeWFtdWRjdkhaMzA3NmQ0WmhUd1FBTW1zVWpYUGVldW03My9EWjNCc2hIQUdBU2pqcjlNKzgrWFVYNWQ0RnNRZ0FWTVY1Wi83OWE0NThjKzVkRUlnQVFGVTBpc2FGNzdsOC82bUg1TjRJVVFnQVZNaVVTZnQ5K0YxZno3MExvdkR2VUtpbnV4NjU1cXFiUi9LSGRsdkd0N2FNYjUweWFWcjdsQU9tVHp0MDV2UWpENXQxL0pHSG5samF2OTA5ZHU2Q1U0OC85OTVmWDFmTzVZaE1BQ3BreERPTE1kVFQyOTNUMjkzWnZXWGRwaFhMVmkzYThkOFBQM2oraWE5K3oya252SDlTMjc2cDkvQytOMy9oVjR0djZ0NitMZldGQ000dElCaVNaMVkrZk4ydFgvak1aY2ZmZE9kWFU0L21xZnZNOEkwZ1NpQUFNQXhkM1IwMzNmblZMMzc3VGM4OS8xalNDLzN4S1gvUk1yNDE2U1ZBQUdEWVZxOTcraXZmTzJ2SnNydlRYYUo5OHZRVFgrVlhSSkNXQU1CSWRIVjNmT1A3SDF5MWRtbTZTeXlZOTRGMGkwTWhBREJpbmQxYnJ2akJSYjE5MnhPdGY5VHNrNmJ1ODRwRWkwTWhBREFhSzljcytmbUQvNVpvOFVaajNMeFhucGxvY1NnRUFFYnAxdnN1Nyt2dlRiVDRNWE1YSkZvWkNnR0FVZHF3ZWRXU1orOUp0UGhSczA5T3RESVVBZ0NqOTV2ZkxreTA4dFI5WnV6WFBpdlI0aUFBTUZwUHIvaFZ1c1VQbXZIS2RJc1RuQURBYUQzL3dsUHBGcDkxd05IcEZpYzRBWURSMnRhMXViTjdTNkxGcDdYUFRMUXlDQUNNZ2M2dVZBSHdUd0ZJUndCZ0RQVDBkaWRhZWNxa2FZbFdCZ0dBTWRBNllWS3FsVnNtSmxvWkJBREd3TVMyOWtRcnQ3UzBKVm9aQkFCR3EzM0tBZW5lcC9mMjlTUmFHUVFBUnV1Z2xOL1U3TzdlbW01eGdoTUFHSzBqRGoweDNlSmQyd1dBVkFRQVJ1dUVveFArenM2dTdvNTBpeE9jQU1Db3pKeCs1TnhENXFkYmYzUEhDK2tXSnpnQmdGRjUyK3MvMFNnYTZkWmZzLzdaZElzVG5BREF5QjErOFB4VGp6ODM2U1hXYmxpV2RIMGlFd0FZb1gwbTdYZlJlNjlvTk5MK0VEa0JrSTRBd0VoTW5qanRyODYvOXNEOURrdDZsYzBkYTlkdlhwbjBFa1RXa25zRDBId09lY1Z4SHozN096T25INW42UWt1WDM1djZFa1FtQURBTWt5ZE9mZnRwZi8yV2t5NXFHZDlhd3VXV1BudDNDVmNoTEFHQXZXczB4aDF4eUIrZTlKcjNuWHI4dVcwVEpwZDIzU2VldmF1MGE0M2VnbmtYTEpoM1FlNWRET2JxSC8vTkhROWRsWHNYRlNJQThIdkdqNXZRMHRJNlplSzBmZmM1Y1BxMFEyZE5QMnJPUVNjY2VlanI5cG04ZjhrN2VYYmx3NnZYUDFQeVJRbEZBS2luNnI4YjNhdTdGMTJiZXd2VW5HOEJRUlYxOTNRKzhOZ1BjKytDbWhNQXFLSTdmL1c5YlYyYmMrK0NtaE1BcUp4dFhTLysrTzUveWIwTDZrOEFvSEp1dmUveUxWdlg1OTRGOVNjQVVDMnIxaTY5OWQ1djVONEZJUWdBVkVoUGIvZTMvK3ZQdC9kMDVkNElJUWdBVk1nTnQzMXh4ZXJGdVhkQkZBSUFWWEhiL1ZmYy9zQ1Z1WGRCSUFJQWxYRFBvbXV2di9XUzNMc2dGZ0dBL081NjVPcXJidjUwZjlHZmV5UEU0bGRCUUU1OS9iMDNMTHowdHZ1dnlMMFJJaElBeUdiVGxqWGZ2Zkhqano5OVIrNk5FSlFBUUI1M1BYTE5EYmRkdXJWelUrNk5FSmNBUU5uKzUvbEhyMS80ZDB1VytXTXZaQ1lBVUo3bHYvdjF6Yi80MnFLbHQrVGVDQlNGQUVBSmVucTdIMW42azdzZXZucnhNM2ZtM2d1OFJBQWdsYjcrM21kV1BIVC9veis0LzdFZmJ1M2NtSHM3c0NzQmdERzJmdE9LeGMvKzRyR25mcmI0bVR0OXhrdVZDUUNNU2w5Zno3cE5LMWV0WGJMOGQ3OVp0bXJSc2xXTE5uZXN6YjBwR0JJQmdOM283Ky9yNmQzZTA5dmQyN3U5dDIvNzlwNnVqbTBiTzdadDJMSnRmY2ZXRFZ1MnJkK3crZmtYTmk1YnUySDV1azByKy9wNmN1OFhSa0lBaG1kN1Q5ZUZYNXFSZXhjMTRjRXNuOGVjbmZsZFFBQkJDUUJBVUFJQUVKUUFBQVFsQUFCQkNRQkFVQUlBRUpRQUFBUWxBQUJCQ1FCQVVBSUFFSlFBQUFRbEFBQkJDUUJBVUFJQUVKUUFBQVFsQUFCQkNRQkFVQUlBRUpRQUFBUWxBQUJCQ1FCQVVBSUFFSlFBQUFRbEFBQkJDUUJBVUFJQUVKUUFBQVFsQUFCQkNRQkFVQUlBRUpRQUFBUWxBQUJCQ1FCQVVBSUFFSlFBQUFRbEFBQkJDUUJBVUFJQUVKUUFBQVFsQUFCQkNRQkFVQUlBRUpRQUFBUWxBQUJCQ1FCQVVBSUFFSlFBQUFRbEFBQkJDUUJBVUFJQUVKUUFBQVFsQUFCQkNRQkFVQUlBRUpRQUFBUWxBQUJCQ1FCQVVBSUFFSlFBQUFRbEFBQkJDUUJBVUFJQUVKUUFBQVFsQUFCQkNRQkFVQUlBRUpRQUFBUWxBQUJCQ1FCQVVBSUFFSlFBQUFRbEFBQkJDUUJBVUFJQUVKUUFBQVFsQUFCQkNRQkFVQUlBRUpRQUFBUWxBQUJCQ1FCQVVBSUFFSlFBQUFTVk1BQVhmbW5HeS8vamR5NVprKzZLQUUxdHR4Tnl0N04wVERnQkFBUWxBQUJCQ1FCQVVBSUFFSlFBQUFTVklRQytDQVR3Y3VYUHhyUUJTUGZ0SllBSWtrNVJ0NEFBZ2hJQWdLQUVBQ0NvUEFId09UREF6ckpNeGVRQjhEa3d3TWlrbnA5dUFRRUVKUUFBUVdVTGdJOEJBQWJrbW9kbEJNREhBQUREVmNMa2RBc0lJS2ljQVhBWENDRGpKQ3dwQU80Q0FReGRPVFBUTFNDQW9ESUh3RjBnSUxLOE03QzhBTGdMQkRBVXBVM0wvTGVBSEFLQW1MSlB2MUlENEJBQU1MZ3k1MlQrRXdBQVdWUWlBTm5QUVFBbHE4TGNLenNBN2dJQjdFbkpFN0lTSjRDaUdqRUVLRWRGSmw2R0FEZ0VBTHhjK2JPeEtpZUFvakpKQkVpcU9yTXVUd0FjQWdCMmxtVXFWdWdFVUZRcGpBQXBWR3JLWlF2QW5uSlhxVWNIWUF6dGFiN2x1aWxTclJNQUFLWEpHUUNIQUNDT3FyMzlMNXdBQU1MS0hBQ0hBQ0NDQ3I3OUw3SUhvTkFBb082cU9mMkxLZ1FBZ0N3cUVRQ0hBS0N1S3Z2MnY2aElBQWFoQVVEenF2Z0VxMG9BQm9saHhSOUJnTjBhWkhaVjRlMS9VWjBBRkpWNVJBQ1NxczZzcTFBQUNoOEdBSFZSNVZ2L08xUXJBSVBRQUtCWk5NdThxbHdBZkJnQU5MWHEzL3Jmb1hJQktEUUFhRnBOTlAyTGFnYWcwQUNnQ1RYWDlDOHFHd0FBVXF0dUFCd0NnQ2JTZEcvL2l5b0hvTkFBb0VrMDQvUXZLaDZBUWdPQXltdlM2VjhVUldOSys3VGNlOWk3d1dkOXhSOWlvSzZhZlRSVi9RUXdZUERIMFZFQUtGK3pULytpV1FKUWFBQlFKVFdZL2tVVEJhRFFBS0FhNmpIOWkrWUtRS0VCUUc2MW1mNUZzM3dJdkl1OUR2cm1lZzZBcGxDL3lkTmtKNEFCZTMyVUhRV0FzVlcvNlY4MGFRQUtEUUJLVk12cFh6VHBMYUFkaGpMbG0vU0pBYXFnM2tPbXVRTXdvSzV4QnZLcS9XeXBRd0NLdWxjYUtGbVFrVktUQUJSRHZ1bGZnK2NNU0NmVUpLbFBBQVlFNlRhUVFyUUJVcmNBRk1FQ0RveUptSE9qaGdFb2h2TWQwSm85bmNCd1JSNFg5UXpBZ01qUEs3QlhSa1NkQXpCZ1dQOGlySzVQTTdDRG1iQkQvUU5RRFA5ZkJkZjdLWWV3aklKZGhBakFnQkg4Y29qYVAvMFFnWi85UFFrVWdBRWoreDFCUVY0TlVDZCsyUGNxWEFBR2pPWlh4WVY2ZlVCejhhTTlMRUVETUdCTWZtTm93QmNOVkllZjR0RUlIWUFCWS82TG84TyttQ0ExUDYxalN3QmU0azhJUUJEQjUvNE9BckFyR1lBYU0vcDNKZ0I3cEFSUUcrYitiZ25BM2lrQk5DbHpmM0FDTUR4aUFCVm42QStkQUl5S0hrQjJKdjZJQ2NEWVV3Vkl4S3dmV3dJQUVOUzQzQnNBSUE4QkFBaEtBQUNDRWdDQW9BUUFJQ2dCQUFoS0FBQ0NFZ0NBb0FRQUlDZ0JBQWhLQUFDQ0VnQ0FvQVFBSUNnQkFBaEtBQUNDRWdDQW9BUUFJQ2dCQUFoS0FBQ0NFZ0NBb0FRQUlDZ0JBQWhLQUFDQ0VnQ0FvQVFBSUNnQkFBaEtBQUNDRWdDQW9QNFhsck9yZzAyeHRkQUFBQUFBU1VWT1JLNUNZSUk9IiwgInNpemVzIjogIjUxMng1MTIiLCAidHlwZSI6ICJpbWFnZS9wbmcifV19">
 </head>
 <body>
 
@@ -196,7 +215,7 @@ canvas.chart{width:100%;height:140px;}
   </div>
   <div class="field"><label>Poids actuel (kg)</label><input type="number" step="0.1" id="ob-poids" placeholder="ex: 75"></div>
   <div class="field"><label>Taux de masse grasse (%) — optionnel</label><input type="number" step="0.1" id="ob-bf" placeholder="ex: 18"></div>
-  <div class="field"><label>Moyenne de pas par jour</label><input type="number" id="ob-steps" placeholder="ex: 8000"></div>
+  <div class="field"><label>Moyenne de pas par jour</label><input type="text" inputmode="numeric" id="ob-steps" placeholder="ex: 8 000" oninput="formatThousandsInput(this)"></div>
   <div class="field"><label>Séances de sport par semaine</label><input type="number" id="ob-seances" placeholder="ex: 4"></div>
   <div class="field"><label>Objectif</label>
     <select id="ob-objectif">
@@ -216,7 +235,9 @@ canvas.chart{width:100%;height:140px;}
       <h1 id="topbar-title">Accueil</h1>
       <div class="topbar-sub" id="topbar-sub"></div>
     </div>
-    <div class="pill" id="topbar-user">👤</div>
+    <div style="display:flex;align-items:center;gap:8px">
+      <div class="pill" id="topbar-user" onclick="openProfileModal()" style="cursor:pointer">👤</div>
+    </div>
   </div>
 
   <div id="main">
@@ -231,18 +252,23 @@ canvas.chart{width:100%;height:140px;}
       </div>
       <div class="card">
         <h3>Calories</h3>
-        <div class="ring-wrap">
-          <div class="ring" id="cal-ring"></div>
-          <div class="ring-inner">
-            <div class="val" id="cal-restantes">0</div>
-            <div class="lbl">restantes</div>
-            <div class="lbl" style="margin-top:4px">sur <b id="cal-total-inring" style="color:var(--txt)">0</b> kcal</div>
+        <div style="display:flex;flex-direction:column;align-items:center;gap:14px">
+          <div class="ring-wrap ring-wrap-sm">
+            <div class="ring" id="cal-ring"></div>
+            <div class="ring-inner">
+              <div class="val" id="cal-restantes">0</div>
+              <div class="lbl">restantes</div>
+              <div class="lbl" style="margin-top:2px">sur <b id="cal-total-inring" style="color:var(--txt)">0</b> kcal</div>
+            </div>
+          </div>
+          <div style="display:flex;gap:28px;text-align:center">
+            <div class="small">Objectif<br><b id="cal-goal-disp" style="color:var(--txt);font-size:17px">0</b></div>
+            <div class="small">Consommées<br><b id="cal-eaten-disp" style="color:var(--txt);font-size:17px">0</b></div>
           </div>
         </div>
-        <div class="row" style="margin-top:14px;justify-content:center;gap:28px;text-align:center;">
-          <div class="small">Objectif<br><b id="cal-goal-disp" style="color:var(--txt)">0</b></div>
-          <div class="small">Consommées<br><b id="cal-eaten-disp" style="color:var(--txt)">0</b></div>
-          <div class="small">Brûlées<br><b style="color:var(--txt)">0</b></div>
+        <div class="row" style="margin-top:14px;border-top:1px solid var(--line);padding-top:10px">
+          <div class="small">Objectifs (calories, macros, repas)</div>
+          <button class="btn" onclick="openGoalsModal()">Modifier</button>
         </div>
       </div>
 
@@ -255,7 +281,26 @@ canvas.chart{width:100%;height:140px;}
       </div>
 
       <div class="card">
-        <div class="row"><h3 style="margin:0">Poids & masse grasse</h3><button class="btn" onclick="openWeightModal()">+ Ajouter</button></div>
+        <h3>Hydratation</h3>
+        <div class="row" style="margin-bottom:10px">
+          <div><div class="small">Bu</div><div style="font-size:20px;font-weight:800" id="water-total">0 ml</div></div>
+          <div style="text-align:right" onclick="editWaterGoal()"><div class="small">Objectif ✎</div><div style="font-size:20px;font-weight:800" id="water-goal-disp">0 ml</div></div>
+        </div>
+        <div class="bar-bg" style="margin-bottom:12px"><div class="bar-fill" id="water-bar" style="width:0%;background:var(--fiber)"></div></div>
+        <div class="grid2">
+          <button class="btn" onclick="addWater(250)">+250 ml</button>
+          <button class="btn" onclick="addWater(500)">+500 ml</button>
+        </div>
+        <button class="btn btn-danger btn-block" style="margin-top:8px" onclick="resetWater()">Réinitialiser le jour</button>
+      </div>
+
+      <div class="card">
+        <h3>Résumé</h3>
+        <div id="weekly-summary"></div>
+      </div>
+
+      <div class="card">
+        <div class="row"><h3 style="margin:0">Poids & masse grasse</h3><div><button class="btn" style="margin-right:6px" onclick="openMeasurementsModal()">📏 Mensurations</button><button class="btn" style="margin-right:6px" onclick="openPhotoCompareModal()">📷 Comparer</button><button class="btn" onclick="openWeightModal()">+ Ajouter</button></div></div>
         <div class="row" style="margin-top:10px">
           <div><div class="small">Poids actuel</div><div style="font-size:20px;font-weight:800" id="weight-disp">—</div></div>
           <div style="text-align:right"><div class="small">Masse grasse</div><div style="font-size:20px;font-weight:800" id="bf-disp">—</div></div>
@@ -264,32 +309,7 @@ canvas.chart{width:100%;height:140px;}
         <div id="weight-history-list" style="margin-top:8px"></div>
       </div>
 
-      <div class="card">
-        <div class="row"><h3 style="margin:0">Mensurations</h3><button class="btn" onclick="openMeasurementModal()">+ Ajouter</button></div>
-        <div class="grid2" style="margin-top:10px">
-          <div><div class="small">Taille</div><div style="font-weight:800" id="meas-waist">—</div></div>
-          <div><div class="small">Poitrine</div><div style="font-weight:800" id="meas-chest">—</div></div>
-          <div><div class="small">Bras</div><div style="font-weight:800" id="meas-arms">—</div></div>
-          <div><div class="small">Cuisses</div><div style="font-weight:800" id="meas-thighs">—</div></div>
-          <div><div class="small">Hanches</div><div style="font-weight:800" id="meas-hips">—</div></div>
-        </div>
-        <div id="measurements-history-list" style="margin-top:8px"></div>
-      </div>
-
-      <div class="card">
-        <h3>Mes données</h3>
-        <div class="small" style="margin-bottom:10px">Sauvegarde complète — inclut profil, objectifs, poids, aliments, journal, <b>routines</b> et séances (avec tous les records). C'est le fichier à utiliser pour tout récupérer si tu perds ton compte.</div>
-        <button class="btn btn-acc btn-block" style="margin-bottom:8px" onclick="exportDataJSON()">💾 Sauvegarder tout (.json)</button>
-        <button class="btn btn-block" onclick="document.getElementById('import-json-input').click()">📥 Restaurer une sauvegarde (.json)</button>
-        <input type="file" id="import-json-input" accept=".json" style="display:none" onchange="onImportJSONFile(event)">
-        <div class="small" style="margin:12px 0 8px;border-top:1px solid var(--line);padding-top:10px">Export lecture seule pour Excel (ne contient pas les routines) :</div>
-        <button class="btn btn-block" onclick="exportDataCSV()">📤 Exporter en CSV</button>
-      </div>
-
-      <div class="card">
-        <div class="row"><h3 style="margin:0">Objectifs</h3><button class="btn" onclick="openGoalsModal()">Modifier</button></div>
-        <div class="small">Calories, protéines, glucides, lipides, fibres et calories par repas</div>
-      </div>
+      <input type="file" id="import-json-input" accept=".json" style="display:none" onchange="onImportJSONFile(event)">
     </section>
 
     <!-- ---------- JOURNAL ---------- -->
@@ -299,6 +319,10 @@ canvas.chart{width:100%;height:140px;}
         <div class="date-lbl" id="journal-date-lbl">Aujourd'hui</div>
         <button onclick="openDatePicker()" title="Choisir une date">📅</button>
         <button onclick="changeDate(1)">›</button>
+      </div>
+      <div class="row" style="margin-bottom:12px">
+        <div class="small">Copie rapide</div>
+        <button class="btn" onclick="openDuplicateDayModal()">📋 Dupliquer une journée</button>
       </div>
       <div id="meals-container"></div>
     </section>
@@ -312,12 +336,12 @@ canvas.chart{width:100%;height:140px;}
       <input type="file" id="label-photo-input" accept="image/*" capture="environment" style="display:none" onchange="onLabelPhoto(event)">
       <div class="row" style="margin-bottom:10px">
         <h3 style="margin:0;color:var(--txt-dim);font-size:14px">Mes repas</h3>
-        <button class="btn btn-acc" onclick="openMealModal()">+ Repas</button>
+        <button class="btn btn-acc" style="min-width:100px;text-align:center" onclick="openMealModal()">+ Repas</button>
       </div>
       <div id="meals-list" style="margin-bottom:16px"></div>
       <div class="row" style="margin-bottom:10px">
         <h3 style="margin:0;color:var(--txt-dim);font-size:14px">Mes aliments</h3>
-        <button class="btn btn-acc" onclick="openFoodModal()">+ Aliment</button>
+        <button class="btn btn-acc" style="min-width:100px;text-align:center" onclick="openFoodModal()">+ Aliment</button>
       </div>
       <div id="foods-list"></div>
     </section>
@@ -337,7 +361,7 @@ canvas.chart{width:100%;height:140px;}
       </div>
 
       <div id="muscu-routines" style="display:none">
-        <button class="btn btn-acc btn-block" style="margin-bottom:14px" onclick="openRoutineModal()">+ Créer une routine</button>
+        <button class="btn btn-acc btn-block" style="margin-bottom:10px" onclick="openRoutineModal()">+ Créer une routine</button>
         <div id="routines-list"></div>
       </div>
 
@@ -398,10 +422,60 @@ canvas.chart{width:100%;height:140px;}
 /* ============================================================
    STORAGE
 ============================================================ */
+/* PWA : le manifest (nom "FBL" + icônes) est encodé directement en data: URI dans le <link rel="manifest">
+   du <head> — donc statique et persistant, contrairement à un blob: qui expire. Pas de service worker
+   (nécessiterait un fichier séparé) : le fonctionnement hors-ligne n'est pas garanti, mais l'installation
+   et le nom/icône de l'app fonctionnent normalement. */
+
 const DB = {
-  get(k,d){ try{const v=localStorage.getItem('fbl_'+k); return v?JSON.parse(v):d;}catch(e){return d;} },
-  set(k,v){ localStorage.setItem('fbl_'+k, JSON.stringify(v)); }
+  get(k,d){
+    try{
+      const pid = localStorage.getItem('fbl_active_profile') || 'default';
+      let v = localStorage.getItem('fbl_'+pid+'_'+k);
+      if(v===null && pid==='default') v = localStorage.getItem('fbl_'+k);
+      return v!==null ? JSON.parse(v) : d;
+    }catch(e){ return d; }
+  },
+  set(k,v){
+    const pid = localStorage.getItem('fbl_active_profile') || 'default';
+    localStorage.setItem('fbl_'+pid+'_'+k, JSON.stringify(v));
+  }
 };
+function getProfilesRegistry(){ try{ return JSON.parse(localStorage.getItem('fbl_profiles_registry')||'[]'); }catch(e){ return []; } }
+function saveProfilesRegistry(list){ localStorage.setItem('fbl_profiles_registry', JSON.stringify(list)); }
+function activeProfileId(){ return localStorage.getItem('fbl_active_profile') || 'default'; }
+function ensureDefaultProfileRegistered(){
+  const list = getProfilesRegistry();
+  const pid = activeProfileId();
+  if(!list.find(p=>p.id===pid)){ list.push({id:pid, name:profile.name||'Profil'}); saveProfilesRegistry(list); }
+}
+function updateActiveProfileName(name){
+  const pid = activeProfileId();
+  const list = getProfilesRegistry();
+  const entry = list.find(p=>p.id===pid);
+  if(entry) entry.name = name; else list.push({id:pid, name});
+  saveProfilesRegistry(list);
+}
+function switchProfile(id){ localStorage.setItem('fbl_active_profile', id); location.reload(); }
+function createNewProfile(){
+  askInputModal('Nom du nouveau profil', '', (name)=>{
+    if(!name) return;
+    const id = 'p'+Date.now();
+    const list = getProfilesRegistry(); list.push({id, name}); saveProfilesRegistry(list);
+    switchProfile(id);
+  });
+}
+function openProfileSwitcher(){
+  const list = getProfilesRegistry();
+  const activeId = activeProfileId();
+  closeModal();
+  openModal(`
+    <h3 style="margin-bottom:12px">Changer de profil</h3>
+    ${list.map(p=>`<div class="ex-pick"><div><b>${p.name}</b>${p.id===activeId?' <span class="tag">actif</span>':''}</div>
+      ${p.id!==activeId? `<button class="btn btn-acc" onclick="switchProfile('${p.id}')">Utiliser</button>`:''}</div>`).join('') || '<div class="small">Aucun profil enregistré.</div>'}
+    <button class="btn btn-block" style="margin-top:10px" onclick="createNewProfile()">+ Nouveau profil</button>
+  `);
+}
 
 const MEAL_KEYS = ['petitDej','collationAM','dejeuner','collationPM','diner'];
 const MEAL_LABELS = {petitDej:'Petit déjeuner',collationAM:'Collation AM',dejeuner:'Déjeuner',collationPM:'Collation PM',diner:'Dîner'};
@@ -421,6 +495,8 @@ let journal = DB.get('journal', {});
 let routines = DB.get('routines', []);
 let workouts = DB.get('workouts', []);
 let customExercises = DB.get('customExercises', []);
+let hydration = DB.get('hydration', {});
+let recentFoods = DB.get('recentFoods', []);
 
 if(!foods){
   foods = [
@@ -436,6 +512,129 @@ if(!foods){
     {id:'f10',name:'Saumon',kcal:208,prot:20,carb:0,fat:13,fiber:0},
   ];
   DB.set('foods', foods);
+}
+
+const DEFAULT_CUSTOM_EXERCISES = [
+  {id:'c_crunch_poulie', name:'Crunch poulie', m:'Abdominaux'},
+  {id:'c_sdt_jt_smith', name:'Soulevé de terre jambes tendues (Smith)', m:'Jambes'}
+];
+let _exChanged=false;
+DEFAULT_CUSTOM_EXERCISES.forEach(ce=>{ if(!customExercises.find(e=>e.id===ce.id)){ customExercises.push(ce); _exChanged=true; } });
+if(_exChanged) DB.set('customExercises', customExercises);
+
+const DEFAULT_ROUTINES = [
+  {id:'r_pecs_dos_epaule', name:'Séance 1 PECS / DOS / ÉPAULES', exercises:[
+    {exId:'e55', sets:[{poids:108,reps:10,repos:180},{poids:100.5,reps:12,repos:180},{poids:100.5,reps:10,repos:180}]},
+    {exId:'e2', altExId:'e54', sets:[{poids:42.5,reps:11,repos:180},{poids:42.5,reps:9,repos:180},{poids:32.5,reps:12,repos:180}]},
+    {exId:'e14', sets:[{poids:78,reps:9,repos:180},{poids:78,reps:7,repos:180}]},
+    {exId:'e59', sets:[{poids:67,reps:16,repos:180},{poids:70,reps:12,repos:180}]},
+    {exId:'e21', altExId:'e63', altSets:[{poids:10,reps:20,repos:105},{poids:10,reps:21,repos:105}], sets:[{poids:12,reps:12,repos:180},{poids:12,reps:11,repos:180},{poids:9,reps:18,repos:180}]},
+    {exId:'e65', sets:[{poids:30,reps:17,repos:180},{poids:30,reps:12,repos:180},{poids:25,reps:15,repos:180}]},
+    {exId:'e78', sets:[{poids:65,reps:12,repos:90}]}
+  ]},
+  {id:'r_jambes_bras', name:'JAMBES / BRAS', exercises:[
+    {exId:'e39', sets:[{poids:60,reps:12,repos:90},{poids:65,reps:11,repos:90}]},
+    {exId:'e36', altExId:'e34', altSets:[{poids:80,reps:10,repos:90},{poids:80,reps:10,repos:90}], sets:[{poids:'',reps:'',repos:90},{poids:'',reps:'',repos:90}]},
+    {exId:'e41', altExId:'c_sdt_jt_smith', altSets:[{poids:42.5,reps:12,repos:180},{poids:42.5,reps:12,repos:180}], sets:[{poids:40,reps:11,repos:180},{poids:40,reps:11,repos:180}]},
+    {exId:'e40', sets:[{poids:56,reps:10,repos:90},{poids:56,reps:7,repos:90}]},
+    {exId:'e30', sets:[{poids:51,reps:10,repos:90},{poids:51,reps:8,repos:90}]},
+    {exId:'e29', sets:[{poids:28,reps:10,repos:90},{poids:28,reps:10,repos:90}]},
+    {exId:'e69', sets:[{poids:46,reps:10,repos:90},{poids:41,reps:12,repos:90}]},
+    {exId:'e68', sets:[{poids:46,reps:14,repos:90},{poids:46,reps:14,repos:90}]},
+    {exId:'c_crunch_poulie', sets:[{poids:71,reps:9,repos:90},{poids:66,reps:11,repos:90}]}
+  ]},
+  {id:'r_pecs_dos_epaule_v2', name:'Séance 2 PECS / DOS / ÉPAULES', exercises:[
+    {exId:'e55', sets:[{poids:108,reps:10,repos:180},{poids:100.5,reps:12,repos:180},{poids:100.5,reps:10,repos:180}]},
+    {exId:'e2', altExId:'e54', sets:[{poids:42.5,reps:11,repos:180},{poids:42.5,reps:9,repos:180},{poids:32.5,reps:12,repos:180}]},
+    {exId:'e14', sets:[{poids:78,reps:9,repos:180},{poids:78,reps:7,repos:180}]},
+    {exId:'e13', sets:[{poids:35,reps:14,repos:180},{poids:35,reps:13,repos:180}]},
+    {exId:'e63', sets:[{poids:10,reps:20,repos:180},{poids:10,reps:21,repos:180}]},
+    {exId:'e65', sets:[{poids:30,reps:17,repos:180},{poids:30,reps:12,repos:180},{poids:25,reps:15,repos:180}]},
+    {exId:'e78', sets:[{poids:65,reps:12,repos:90}]}
+  ]}
+];
+let _routinesChanged=false;
+DEFAULT_ROUTINES.forEach(dr=>{ if(!routines.find(r=>r.id===dr.id)){ routines.push(JSON.parse(JSON.stringify(dr))); _routinesChanged=true; } });
+if(_routinesChanged) DB.set('routines', routines);
+
+/* Correctifs ponctuels sur les séances déjà enregistrées (repos, poids, alternatives) */
+if(!profile.routinesPatch2){
+  const findR = id => routines.find(r=>r.id===id);
+  const defR = id => DEFAULT_ROUTINES.find(r=>r.id===id);
+  ['r_pecs_dos_epaule','r_pecs_dos_epaule_v2'].forEach(id=>{
+    const r = findR(id), d = defR(id);
+    if(r && d) r.exercises = JSON.parse(JSON.stringify(d.exercises));
+  });
+  const rjb = findR('r_jambes_bras');
+  if(rjb){
+    const idx = rjb.exercises.findIndex(e=>e.exId==='e41'||e.exId==='c_sdt_jt_smith');
+    const patch = {exId:'e41', altExId:'c_sdt_jt_smith', altSets:[{poids:42.5,reps:12,repos:180},{poids:42.5,reps:12,repos:180}], sets:[{poids:40,reps:11,repos:180},{poids:40,reps:11,repos:180}]};
+    if(idx>-1) rjb.exercises[idx] = patch; else rjb.exercises.push(patch);
+  }
+  profile.routinesPatch2 = true;
+  DB.set('routines', routines); DB.set('profile', profile);
+}
+
+const PhotoDB = (function(){
+  const DB_NAME = 'fbl_photos_'+activeProfileId();
+  let dbPromise = null;
+  function open(){
+    if(!('indexedDB' in window)) return Promise.reject(new Error('indexedDB indisponible'));
+    if(dbPromise) return dbPromise;
+    dbPromise = new Promise((resolve,reject)=>{
+      const req = indexedDB.open(DB_NAME, 1);
+      req.onupgradeneeded = ()=> req.result.createObjectStore('photos');
+      req.onsuccess = ()=> resolve(req.result);
+      req.onerror = ()=> reject(req.error);
+    });
+    return dbPromise;
+  }
+  return {
+    async set(id, dataUrl){
+      const db = await open();
+      return new Promise((res,rej)=>{
+        const tx = db.transaction('photos','readwrite');
+        tx.objectStore('photos').put(dataUrl, id);
+        tx.oncomplete = ()=>res(true); tx.onerror = ()=>rej(tx.error);
+      });
+    },
+    async get(id){
+      const db = await open();
+      return new Promise((res,rej)=>{
+        const tx = db.transaction('photos','readonly');
+        const req = tx.objectStore('photos').get(id);
+        req.onsuccess = ()=>res(req.result||null); req.onerror = ()=>rej(req.error);
+      });
+    }
+  };
+})();
+let photoCache = {};
+async function getPhotoDataUrl(id){
+  if(!id) return null;
+  if(photoCache[id]) return photoCache[id];
+  try{ const v = await PhotoDB.get(id); if(v){ photoCache[id]=v; return v; } }catch(e){}
+  return null;
+}
+/* Migration : les anciennes photos en Base64 dans localStorage sont déplacées vers IndexedDB (bien plus adapté au stockage d'images) */
+async function migrateLegacyPhotos(){
+  try{
+    let changed = false;
+    for(const w of weightHistory){
+      if(w.photo && !w.photoId){
+        const id = 'wm_'+w.date+'_'+Math.random().toString(36).slice(2,7);
+        await PhotoDB.set(id, w.photo); photoCache[id]=w.photo;
+        w.photoId = id; delete w.photo; changed = true;
+      }
+    }
+    for(const m of measurements){
+      if(m.photo && !m.photoId){
+        const id = 'me_'+m.date+'_'+Math.random().toString(36).slice(2,7);
+        await PhotoDB.set(id, m.photo); photoCache[id]=m.photo;
+        m.photoId = id; delete m.photo; changed = true;
+      }
+    }
+    if(changed){ DB.set('weightHistory', weightHistory); DB.set('measurements', measurements); renderAccueil(); }
+  }catch(e){ console.warn('Migration photos impossible', e); }
 }
 
 let state = { date: todayStr(), muscuSub:'accueil', currentWorkout:null, picker:{target:null}, muscuDateFilter:null };
@@ -456,6 +655,15 @@ function parseRepos(str){
   return (parseInt(str)||0)*60;
 }
 function fmtNum(n){ return Math.round(n).toLocaleString('fr-FR'); }
+function formatThousandsInput(el){
+  let raw = el.value.replace(/\s/g,'').replace(/[^\d]/g,'');
+  el.value = raw ? Number(raw).toLocaleString('fr-FR') : '';
+}
+function exIconHtml(m){
+  const colors={Pectoraux:'var(--cal)',Dos:'var(--fiber)','Épaules':'var(--carb)',Bras:'var(--fat)',Jambes:'var(--muscu)',Abdominaux:'var(--prot)',Cardio:'var(--gold)'};
+  const c = colors[m]||'var(--txt-dim)';
+  return '<span class="ex-ic" style="background:'+c+'">'+(m?m[0]:'?')+'</span>';
+}
 function fmtDate(str){
   const d=new Date(str+'T00:00:00'); const t=new Date(todayStr()+'T00:00:00');
   const diff=Math.round((d-t)/86400000);
@@ -475,7 +683,7 @@ function prefillOnboarding(){
     document.getElementById('ob-sexe').value = b.sexe;
     document.getElementById('ob-age').value = b.age;
     document.getElementById('ob-taille').value = b.taille;
-    document.getElementById('ob-steps').value = b.steps;
+    document.getElementById('ob-steps').value = b.steps!=null ? (+b.steps).toLocaleString('fr-FR') : '';
     document.getElementById('ob-seances').value = b.seances;
     document.getElementById('ob-objectif').value = b.objectif;
   }
@@ -488,6 +696,7 @@ function openOnboardingScreen(){
 function doLogin(){
   const name = document.getElementById('login-name').value.trim() || 'Toi';
   profile.name = name; DB.set('profile', profile);
+  updateActiveProfileName(name);
   document.getElementById('screen-login').style.display='none';
   if(profile.onboarded){ enterApp(); }
   else { openOnboardingScreen(); }
@@ -502,7 +711,7 @@ function computeCaloriesFromProfile(){
   const age = +document.getElementById('ob-age').value;
   const taille = +document.getElementById('ob-taille').value;
   const poids = +document.getElementById('ob-poids').value;
-  const steps = +document.getElementById('ob-steps').value || 0;
+  const steps = +String(document.getElementById('ob-steps').value).replace(/\s/g,'') || 0;
   const seances = +document.getElementById('ob-seances').value || 0;
   const objectif = document.getElementById('ob-objectif').value;
   if(!age || !taille || !poids){ alert("Renseigne au moins l'âge, la taille et le poids, ou passe cette étape."); return; }
@@ -540,11 +749,28 @@ function computeCaloriesFromProfile(){
   document.getElementById('screen-onboarding').style.display='none';
   enterApp();
 }
+function applyTheme(){ document.body.classList.toggle('theme-light', profile.theme==='light'); }
+function toggleTheme(){ profile.theme = profile.theme==='light' ? 'dark' : 'light'; DB.set('profile', profile); applyTheme(); }
+function isBackupOverdue(){ return (Date.now() - (profile.lastExportAt||0)) > 7*24*3600*1000; }
+function updateBackupBadge(){
+  const el = document.getElementById('topbar-user'); if(!el) return;
+  el.style.position='relative';
+  let dot = document.getElementById('backup-dot');
+  if(isBackupOverdue()){
+    if(!dot){ dot = document.createElement('span'); dot.id='backup-dot';
+      dot.style.cssText='position:absolute;top:-2px;right:-2px;width:10px;height:10px;border-radius:50%;background:var(--fat);border:2px solid var(--bg)';
+      el.appendChild(dot); }
+  } else if(dot){ dot.remove(); }
+}
 function enterApp(){
   document.getElementById('app').style.display='flex';
   document.getElementById('topbar-user').textContent = profile.name[0].toUpperCase();
+  applyTheme();
+  ensureDefaultProfileRegistered();
   buildExerciseSelect();
   showScreen('accueil');
+  updateBackupBadge();
+  migrateLegacyPhotos();
 }
 if(profile.name && profile.onboarded){
   document.getElementById('screen-login').style.display='none';
@@ -575,6 +801,44 @@ function openModal(html){
   document.getElementById('modal-bg').classList.add('show');
 }
 function closeModal(){ document.getElementById('modal-bg').classList.remove('show'); }
+function askInputModal(title, defaultValue, onConfirm, opts={}){
+  window._askInputCallback = onConfirm;
+  openModal(`
+    <h3 style="margin-bottom:14px">${title}</h3>
+    <div class="field"><input type="${opts.type||'text'}" ${opts.step?`step="${opts.step}"`:''} id="ask-input-val" value="${defaultValue!=null?defaultValue:''}" onkeydown="if(event.key==='Enter')confirmAskInput()"></div>
+    <button class="btn btn-acc btn-block" onclick="confirmAskInput()">Valider</button>
+  `);
+  setTimeout(()=>{ const el=document.getElementById('ask-input-val'); if(el){ el.focus(); el.select(); } }, 60);
+}
+function confirmAskInput(){
+  const el = document.getElementById('ask-input-val');
+  const val = el ? el.value : null;
+  const cb = window._askInputCallback;
+  closeModal();
+  if(cb) cb(val);
+}
+function openProfileModal(){
+  openModal(`
+    <h3 style="margin-bottom:4px">${profile.name||'Profil'}</h3>
+    <div class="small" style="margin-bottom:14px">Objectif : ${fmtNum(profile.goals.calories)} kcal/j</div>
+    ${isBackupOverdue()? '<div class="small" style="color:var(--fat);margin-bottom:10px">⚠️ Pense à faire une sauvegarde (aucune depuis +7 jours ou jamais).</div>' : ''}
+    <button class="btn btn-block" style="margin-bottom:8px" onclick="openProfileSwitcher()">👥 Changer de profil</button>
+    <button class="btn btn-block" style="margin-bottom:8px" onclick="toggleTheme()">🌗 Thème clair / sombre</button>
+    <button class="btn btn-acc btn-block" onclick="openBackupMenu()">💾 Sauvegarde & export</button>
+  `);
+}
+function openBackupMenu(){
+  openModal(`
+    <h3 style="margin-bottom:12px">Sauvegarde & export</h3>
+    ${isBackupOverdue()? '<div class="small" style="color:var(--fat);margin-bottom:10px">⚠️ Dernière sauvegarde il y a plus de 7 jours (ou jamais). Pense à exporter !</div>' : ''}
+    <div class="small" style="margin-bottom:10px">Sauvegarde complète — inclut profil, objectifs, poids, aliments, journal, <b>routines</b> et séances (avec tous les records). C'est le fichier à utiliser pour tout récupérer si tu perds ton compte.</div>
+    <button class="btn btn-acc btn-block" style="margin-bottom:8px" onclick="exportDataJSON()">💾 Sauvegarder tout (.json)</button>
+    <button class="btn btn-block" style="margin-bottom:8px" onclick="document.getElementById('import-json-input').click()">📥 Restaurer une sauvegarde (.json)</button>
+    <div class="small" style="margin:12px 0 8px;border-top:1px solid var(--line);padding-top:10px">Export lecture seule pour Excel (sans routines) :</div>
+    <button class="btn btn-block" style="margin-bottom:14px" onclick="exportDataCSV()">📤 Exporter en CSV</button>
+    <button class="btn btn-block" onclick="openProfileModal()">← Retour</button>
+  `);
+}
 
 /* Garde la saisie visible au-dessus du clavier mobile */
 (function(){
@@ -635,20 +899,130 @@ function renderAccueil(){
   document.getElementById('bf-disp').textContent = w && w.bodyFat? w.bodyFat+' %':'—';
   drawLineChart('chart-weight', weightHistory.map(w=>w.date.slice(5)), weightHistory.map(w=>w.weight), '#4fd1c5');
   renderWeightHistoryList();
-  renderMeasurements();
+  renderHydration();
+  renderWeeklySummary();
+  updateBackupBadge();
 }
-function renderMeasurements(){
+function computeWeeklySummary(){
+  const days = [];
+  for(let i=0;i<7;i++){ const d=new Date(); d.setDate(d.getDate()-i); days.push(d.toISOString().slice(0,10)); }
+  let sumKcal=0, daysLogged=0, proteinStreak=0, streakBroken=false;
+  days.forEach(d=>{
+    const t = totalsForDate(d);
+    if(t.kcal>0){ sumKcal+=t.kcal; daysLogged++; }
+    if(!streakBroken){ if(t.prot >= profile.goals.protein) proteinStreak++; else streakBroken = true; }
+  });
+  const avgKcal = daysLogged? sumKcal/daysLogged : 0;
+  const sorted = [...weightHistory].sort((a,b)=>a.date.localeCompare(b.date));
+  const cutoff = new Date(todayStr()); cutoff.setDate(cutoff.getDate()-30);
+  const recent = sorted.filter(w=> new Date(w.date) >= cutoff);
+  let trend = null;
+  if(recent.length>=2) trend = recent[recent.length-1].weight - recent[0].weight;
+  return {avgKcal, proteinStreak, trend, daysLogged};
+}
+function renderWeeklySummary(){
+  const el = document.getElementById('weekly-summary'); if(!el) return;
+  const s = computeWeeklySummary();
+  el.innerHTML = `
+    <div class="grid2">
+      <div><div class="small">Moyenne kcal/j (7j)</div><div style="font-size:18px;font-weight:800">${s.daysLogged? fmtNum(s.avgKcal):'—'}</div></div>
+      <div><div class="small">Streak objectif protéines</div><div style="font-size:18px;font-weight:800">${s.proteinStreak} j</div></div>
+    </div>
+    <div class="small" style="margin-top:8px">Tendance poids (30j) : ${s.trend==null?'—':(s.trend>0?'+':'')+s.trend.toFixed(1)+' kg'}</div>`;
+}
+function renderHydration(){
+  const goal = profile.waterGoal || 2500;
+  const total = hydration[state.date] || 0;
+  const pct = Math.min(100, Math.round((total/goal)*100)) || 0;
+  document.getElementById('water-total').textContent = fmtNum(total)+' ml';
+  document.getElementById('water-goal-disp').textContent = fmtNum(goal)+' ml';
+  document.getElementById('water-bar').style.width = pct+'%';
+}
+function addWater(ml){
+  hydration[state.date] = (hydration[state.date]||0) + ml;
+  DB.set('hydration', hydration);
+  renderHydration();
+}
+function resetWater(){
+  hydration[state.date] = 0;
+  DB.set('hydration', hydration);
+  renderHydration();
+}
+function editWaterGoal(){
+  askInputModal('Objectif hydratation quotidien (ml)', profile.waterGoal||2500, (v)=>{
+    if(!v || isNaN(v)) return;
+    profile.waterGoal = +v; DB.set('profile', profile); renderHydration();
+  }, {type:'number'});
+}
+function resizeImageFile(file, maxDim, cb){
+  const reader = new FileReader();
+  reader.onload = e=>{
+    const img = new Image();
+    img.onload = ()=>{
+      let w = img.width, h = img.height;
+      if(w>h){ if(w>maxDim){ h = Math.round(h*maxDim/w); w = maxDim; } }
+      else { if(h>maxDim){ w = Math.round(w*maxDim/h); h = maxDim; } }
+      const canvas = document.createElement('canvas'); canvas.width=w; canvas.height=h;
+      canvas.getContext('2d').drawImage(img,0,0,w,h);
+      cb(canvas.toDataURL('image/jpeg',0.7));
+    };
+    img.src = e.target.result;
+  };
+  reader.readAsDataURL(file);
+}
+function viewPhoto(src){ openModal(`<img src="${src}" style="width:100%;border-radius:12px">`); }
+async function viewPhotoById(id){ const url = await getPhotoDataUrl(id); if(url) viewPhoto(url); }
+function photoFieldHtml(prefix, existingId){
+  const existing = existingId ? photoCache[existingId] : null;
+  return `<div class="field"><label>Photo (optionnel)</label><input type="file" accept="image/*" id="${prefix}-photo" onchange="onPhotoSelected(this,'${prefix}')"></div>
+    <div id="${prefix}-photo-preview">${existing? `<img src="${existing}" style="width:100%;border-radius:10px;margin-bottom:10px">` : ''}</div>`;
+}
+function onPhotoSelected(input, prefix){
+  const file = input.files[0]; if(!file) return;
+  resizeImageFile(file, 480, async dataUrl=>{
+    const id = prefix+'_'+Date.now();
+    try{ await PhotoDB.set(id, dataUrl); photoCache[id] = dataUrl; }catch(e){ alert("Stockage photo indisponible sur ce navigateur."); return; }
+    window['_'+prefix+'PhotoId'] = id;
+    document.getElementById(prefix+'-photo-preview').innerHTML = `<img src="${dataUrl}" style="width:100%;border-radius:10px;margin-bottom:10px">`;
+  });
+}
+function photoThumbHtml(photoId){
+  return photoId? `<span class="photo-thumb" data-photo-id="${photoId}" style="display:inline-block;width:36px;height:36px;border-radius:8px;background:var(--card2)"></span>` : '';
+}
+function hydratePhotoThumbs(){
+  document.querySelectorAll('.photo-thumb[data-photo-id]').forEach(async el=>{
+    const id = el.dataset.photoId;
+    const url = await getPhotoDataUrl(id);
+    if(url) el.outerHTML = `<img src="${url}" style="width:36px;height:36px;object-fit:cover;border-radius:8px;cursor:pointer" onclick="viewPhotoById('${id}')">`;
+  });
+}
+function measurementsPanelHtml(){
   const m = measurements[measurements.length-1];
-  const set=(id,v)=> document.getElementById(id).textContent = (v!=null&&v!=='')? v+' cm' : '—';
-  set('meas-waist', m?m.waist:null); set('meas-chest', m?m.chest:null);
-  set('meas-arms', m?m.arms:null); set('meas-thighs', m?m.thighs:null); set('meas-hips', m?m.hips:null);
+  const val=(v)=> (v!=null&&v!=='')? v+' cm' : '—';
   const list = [...measurements].map((x,i)=>({...x,i})).reverse().slice(0,10);
-  document.getElementById('measurements-history-list').innerHTML = list.map(x=>`
+  const historyHtml = list.map(x=>`
     <div class="food-line">
-      <div><div class="fname">${fmtDate(x.date)}</div><div class="fmacro">T${x.waist||'-'} P${x.chest||'-'} B${x.arms||'-'} C${x.thighs||'-'} H${x.hips||'-'}</div></div>
+      <div style="display:flex;align-items:center;gap:8px">
+        ${photoThumbHtml(x.photoId)}
+        <div><div class="fname">${fmtDate(x.date)}</div><div class="fmacro">T${x.waist||'-'} P${x.chest||'-'} B${x.arms||'-'} C${x.thighs||'-'} H${x.hips||'-'}</div></div>
+      </div>
       <div><button class="btn" style="padding:6px 10px" onclick="editMeasurementEntry(${x.i})">✎</button>
       <button class="btn btn-danger" style="padding:6px 10px" onclick="deleteMeasurementEntry(${x.i})">✕</button></div>
     </div>`).join('') || '<div class="small">Aucune mensuration enregistrée.</div>';
+  return `
+    <div class="row" style="margin-bottom:10px"><h3 style="margin:0">Mensurations</h3><button class="btn" onclick="openMeasurementModal()">+ Ajouter</button></div>
+    <div class="grid2" style="margin-bottom:14px">
+      <div><div class="small">Taille</div><div style="font-weight:800">${val(m?m.waist:null)}</div></div>
+      <div><div class="small">Poitrine</div><div style="font-weight:800">${val(m?m.chest:null)}</div></div>
+      <div><div class="small">Bras</div><div style="font-weight:800">${val(m?m.arms:null)}</div></div>
+      <div><div class="small">Cuisses</div><div style="font-weight:800">${val(m?m.thighs:null)}</div></div>
+      <div><div class="small">Hanches</div><div style="font-weight:800">${val(m?m.hips:null)}</div></div>
+    </div>
+    ${historyHtml}`;
+}
+function openMeasurementsModal(){
+  openModal(measurementsPanelHtml());
+  hydratePhotoThumbs();
 }
 function measurementFields(prefix,vals={}){
   return `<div class="grid2">
@@ -664,46 +1038,58 @@ function readMeasurementFields(prefix){
   return {waist:v('waist'),chest:v('chest'),arms:v('arms'),thighs:v('thighs'),hips:v('hips')};
 }
 function openMeasurementModal(){
+  window._mePhotoId = null;
   openModal(`<h3 style="margin-bottom:14px">Ajouter des mensurations</h3>${measurementFields('me')}
+    ${photoFieldHtml('me',null)}
     <button class="btn btn-acc btn-block" onclick="saveMeasurement()">Enregistrer</button>`);
 }
 function saveMeasurement(){
-  measurements.push({date:todayStr(), ...readMeasurementFields('me')});
-  DB.set('measurements', measurements); closeModal(); renderMeasurements();
+  measurements.push({date:todayStr(), ...readMeasurementFields('me'), photoId:window._mePhotoId||null});
+  DB.set('measurements', measurements); openMeasurementsModal();
 }
-function editMeasurementEntry(i){
-  const m = measurements[i];
+async function editMeasurementEntry(i){
+  const m = measurements[i]; if(!m) return;
+  window._mePhotoId = m.photoId||null;
+  if(m.photoId) await getPhotoDataUrl(m.photoId);
   openModal(`<h3 style="margin-bottom:14px">Modifier les mensurations</h3>
     <div class="field"><label>Date</label><input type="date" id="me-date" value="${m.date}"></div>
     ${measurementFields('me',m)}
+    ${photoFieldHtml('me',m.photoId)}
     <button class="btn btn-acc btn-block" onclick="saveMeasurementEdit(${i})">Enregistrer</button>
     <button class="btn btn-danger btn-block" style="margin-top:8px" onclick="deleteMeasurementEntry(${i})">Supprimer</button>`);
 }
 function saveMeasurementEdit(i){
   const date = document.getElementById('me-date').value || measurements[i].date;
-  measurements[i] = {date, ...readMeasurementFields('me')};
+  measurements[i] = {date, ...readMeasurementFields('me'), photoId:window._mePhotoId||null};
   measurements.sort((a,b)=>a.date.localeCompare(b.date));
-  DB.set('measurements', measurements); closeModal(); renderMeasurements();
+  DB.set('measurements', measurements); openMeasurementsModal();
 }
-function deleteMeasurementEntry(i){ measurements.splice(i,1); DB.set('measurements',measurements); closeModal(); renderMeasurements(); }
+function deleteMeasurementEntry(i){ measurements.splice(i,1); DB.set('measurements',measurements); openMeasurementsModal(); }
 function renderWeightHistoryList(){
   const list = [...weightHistory].map((w,i)=>({...w,i})).reverse().slice(0,10);
   document.getElementById('weight-history-list').innerHTML = list.map(w=>`
     <div class="food-line">
-      <div><div class="fname">${fmtDate(w.date)}</div><div class="fmacro">${w.weight} kg${w.bodyFat? ' · '+w.bodyFat+'% MG':''}</div></div>
+      <div style="display:flex;align-items:center;gap:8px">
+        ${photoThumbHtml(w.photoId)}
+        <div><div class="fname">${fmtDate(w.date)}</div><div class="fmacro">${w.weight} kg${w.bodyFat? ' · '+w.bodyFat+'% MG':''}</div></div>
+      </div>
       <div>
         <button class="btn" style="padding:6px 10px" onclick="editWeightEntry(${w.i})">✎</button>
         <button class="btn btn-danger" style="padding:6px 10px" onclick="deleteWeightEntry(${w.i})">✕</button>
       </div>
     </div>`).join('') || '<div class="small">Aucune mesure enregistrée.</div>';
+  hydratePhotoThumbs();
 }
-function editWeightEntry(i){
-  const w = weightHistory[i];
+async function editWeightEntry(i){
+  const w = weightHistory[i]; if(!w) return;
+  window._wmPhotoId = w.photoId||null;
+  if(w.photoId) await getPhotoDataUrl(w.photoId);
   openModal(`
     <h3 style="margin-bottom:14px">Modifier la mesure</h3>
     <div class="field"><label>Date</label><input type="date" id="wm-date" value="${w.date}"></div>
     <div class="field"><label>Poids (kg)</label><input type="number" step="0.1" id="wm-weight" value="${w.weight}"></div>
     <div class="field"><label>Masse grasse (%)</label><input type="number" step="0.1" id="wm-bf" value="${w.bodyFat!=null?w.bodyFat:''}"></div>
+    ${photoFieldHtml('wm',w.photoId)}
     <button class="btn btn-acc btn-block" onclick="saveWeightEdit(${i})">Enregistrer</button>
     <button class="btn btn-danger btn-block" style="margin-top:8px" onclick="deleteWeightEntry(${i})">Supprimer</button>`);
 }
@@ -712,7 +1098,7 @@ function saveWeightEdit(i){
   const weight = parseFloat(document.getElementById('wm-weight').value);
   const bf = parseFloat(document.getElementById('wm-bf').value);
   if(!weight) return;
-  weightHistory[i] = {date, weight, bodyFat: isNaN(bf)?null:bf};
+  weightHistory[i] = {date, weight, bodyFat: isNaN(bf)?null:bf, photoId:window._wmPhotoId||null};
   weightHistory.sort((a,b)=> a.date.localeCompare(b.date));
   DB.set('weightHistory', weightHistory); closeModal(); renderAccueil();
 }
@@ -726,19 +1112,61 @@ function macroBar(id,label,val,goal,color){
     <div class="bar-bg"><div class="bar-fill" style="width:${pct}%;background:${color}"></div></div>`;
 }
 function openWeightModal(){
+  window._wmPhotoId = null;
   openModal(`
     <h3 style="margin-bottom:14px">Ajouter une mesure</h3>
     <div class="field"><label>Poids (kg)</label><input type="number" step="0.1" id="wm-weight"></div>
     <div class="field"><label>Masse grasse (%)</label><input type="number" step="0.1" id="wm-bf"></div>
+    ${photoFieldHtml('wm',null)}
     <button class="btn btn-acc btn-block" onclick="saveWeight()">Enregistrer</button>`);
 }
 function saveWeight(){
   const w = parseFloat(document.getElementById('wm-weight').value);
   const bf = parseFloat(document.getElementById('wm-bf').value);
   if(!w) return;
-  weightHistory.push({date:todayStr(), weight:w, bodyFat: isNaN(bf)?null:bf});
+  weightHistory.push({date:todayStr(), weight:w, bodyFat: isNaN(bf)?null:bf, photoId:window._wmPhotoId||null});
   DB.set('weightHistory', weightHistory);
   closeModal(); renderAccueil();
+}
+/* -- comparateur photo avant/après -- */
+function collectPhotoEntries(){
+  const list = [];
+  weightHistory.forEach(w=>{ if(w.photoId) list.push({date:w.date, photoId:w.photoId, label:'Poids '+w.weight+'kg'}); });
+  measurements.forEach(m=>{ if(m.photoId) list.push({date:m.date, photoId:m.photoId, label:'Mensurations'}); });
+  return list.sort((a,b)=>a.date.localeCompare(b.date));
+}
+function openPhotoCompareModal(){
+  const list = collectPhotoEntries();
+  if(list.length<2){ alert("Il faut au moins 2 photos enregistrées (poids ou mensurations) pour comparer."); return; }
+  window._cmpList = list;
+  const options = list.map((e,i)=>`<option value="${i}">${fmtDate(e.date)} — ${e.label}</option>`).join('');
+  openModal(`
+    <h3 style="margin-bottom:12px">Comparateur photos</h3>
+    <div class="grid2">
+      <div class="field"><label>Avant</label><select id="cmp-before" onchange="renderPhotoCompare()">${options}</select></div>
+      <div class="field"><label>Après</label><select id="cmp-after" onchange="renderPhotoCompare()">${options}</select></div>
+    </div>
+    <div id="cmp-view" style="position:relative;width:100%;aspect-ratio:3/4;border-radius:12px;overflow:hidden;background:var(--card2)"></div>
+    <input type="range" min="0" max="100" value="50" id="cmp-slider" style="width:100%;margin-top:10px" oninput="updateCompareSlider(this.value)">`);
+  document.getElementById('cmp-after').selectedIndex = list.length-1;
+  renderPhotoCompare();
+}
+async function renderPhotoCompare(){
+  const list = window._cmpList;
+  const bi = +document.getElementById('cmp-before').value;
+  const ai = +document.getElementById('cmp-after').value;
+  const beforeUrl = await getPhotoDataUrl(list[bi].photoId);
+  const afterUrl = await getPhotoDataUrl(list[ai].photoId);
+  const view = document.getElementById('cmp-view'); if(!view) return;
+  view.innerHTML = `
+    <img src="${beforeUrl||''}" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover">
+    <img id="cmp-after-img" src="${afterUrl||''}" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;clip-path:inset(0 50% 0 0)">
+    <div style="position:absolute;top:8px;left:8px;background:rgba(0,0,0,.5);padding:2px 8px;border-radius:6px;font-size:11px;color:#fff">Avant</div>
+    <div style="position:absolute;top:8px;right:8px;background:rgba(0,0,0,.5);padding:2px 8px;border-radius:6px;font-size:11px;color:#fff">Après</div>`;
+}
+function updateCompareSlider(v){
+  const img = document.getElementById('cmp-after-img'); if(!img) return;
+  img.style.clipPath = `inset(0 ${100-v}% 0 0)`;
 }
 function openGoalsModal(){
   const g = profile.goals, m = profile.mealGoals;
@@ -884,10 +1312,40 @@ function renderJournal(){
           return `<div class="food-line"><div><div class="fname">${f.name}</div><div class="fmacro">${it.qty}g · ${fmtNum(f.kcal*it.qty/100)} kcal · P${p} G${g} L${l} F${fi}</div></div><button class="del" style="color:var(--fat)" onclick="removeJournalItem('${mk}',${i})">✕</button></div>`;
         }).join('')}
         <button class="add-food-btn" onclick="openAddToMeal('${mk}')">+ Ajouter un aliment</button>
+        <button class="add-food-btn" style="color:var(--txt-dim)" onclick="copyMealFromYesterday('${mk}')">📋 Copier ce repas d'hier</button>
       </div>
     </div>`;
   });
   document.getElementById('meals-container').innerHTML = html;
+}
+function copyMealFromYesterday(mk){
+  const d = new Date(state.date+'T00:00:00'); d.setDate(d.getDate()-1);
+  const yDate = d.toISOString().slice(0,10);
+  const items = (journal[yDate]||{})[mk];
+  if(!items || !items.length){ alert("Aucun aliment trouvé hier pour "+MEAL_LABELS[mk]+"."); return; }
+  if(!journal[state.date]) journal[state.date]={};
+  if(!journal[state.date][mk]) journal[state.date][mk]=[];
+  items.forEach(it=> journal[state.date][mk].push({foodId:it.foodId, qty:it.qty}));
+  DB.set('journal', journal); renderJournal(); renderAccueil();
+}
+function openDuplicateDayModal(){
+  openModal(`
+    <h3 style="margin-bottom:12px">Dupliquer une journée</h3>
+    <div class="small" style="margin-bottom:10px">Copie tout le journal alimentaire d'une date source vers ${fmtDate(state.date)}.</div>
+    <div class="field"><label>Journée source</label><input type="date" id="dup-date"></div>
+    <button class="btn btn-acc btn-block" onclick="duplicateDay()">Dupliquer</button>`);
+}
+function duplicateDay(){
+  const src = document.getElementById('dup-date').value;
+  if(!src) return;
+  if(src===state.date){ alert("Choisis une date source différente du jour affiché."); return; }
+  const data = journal[src];
+  if(!data || !Object.keys(data).length){ alert("Aucune donnée trouvée pour le "+fmtDate(src)+"."); return; }
+  if(journal[state.date] && Object.keys(journal[state.date]).some(k=>(journal[state.date][k]||[]).length)){
+    if(!confirm("Le "+fmtDate(state.date)+" contient déjà des aliments. Les remplacer par ceux du "+fmtDate(src)+" ?")) return;
+  }
+  journal[state.date] = JSON.parse(JSON.stringify(data));
+  DB.set('journal', journal); closeModal(); renderJournal(); renderAccueil();
 }
 function editMealGoal(mk){ openGoalsModal(); }
 function removeJournalItem(mk,i){
@@ -919,20 +1377,38 @@ function addMealToJournal(mealId, mk){
   m.items.forEach(it=> journal[state.date][mk].push({foodId:it.foodId, qty:it.qty}));
   DB.set('journal', journal); closeModal(); renderJournal(); renderAccueil();
 }
+function sortedFoodsForPicker(query){
+  const q = (query||'').toLowerCase();
+  let list = foods.filter(f=>f.name.toLowerCase().includes(q));
+  if(!q){
+    const favs = list.filter(f=>f.fav);
+    const recents = recentFoods.map(id=>list.find(f=>f.id===id)).filter(Boolean).filter(f=>!f.fav);
+    const rest = list.filter(f=>!f.fav && !recentFoods.includes(f.id));
+    list = [...favs, ...recents, ...rest];
+  }
+  return list;
+}
+function trackRecentFood(foodId){
+  recentFoods = [foodId, ...recentFoods.filter(id=>id!==foodId)].slice(0,10);
+  DB.set('recentFoods', recentFoods);
+}
 function filterJournalFoods(mk){
-  const q = (document.getElementById('jf-search').value||'').toLowerCase();
-  const list = foods.filter(f=>f.name.toLowerCase().includes(q));
+  const q = (document.getElementById('jf-search').value||'');
+  const list = sortedFoodsForPicker(q);
   document.getElementById('jf-list').innerHTML = list.map(f=>`
-    <div class="ex-pick"><div><b>${f.name}</b><div class="small">${f.kcal} kcal /100g</div></div>
+    <div class="ex-pick"><div>${f.fav?'⭐ ':''}<b>${f.name}</b><div class="small">${f.kcal} kcal /100g</div></div>
     <button class="btn btn-acc" onclick="addFoodToMeal('${f.id}','${mk}')">Ajouter</button></div>`).join('') || '<div class="small">Aucun résultat</div>';
 }
 function addFoodToMeal(foodId, mk){
-  const qty = prompt('Quantité (g)', '100');
-  if(!qty || isNaN(qty)) return;
-  if(!journal[state.date]) journal[state.date]={};
-  if(!journal[state.date][mk]) journal[state.date][mk]=[];
-  journal[state.date][mk].push({foodId, qty:+qty});
-  DB.set('journal', journal); closeModal(); renderJournal(); renderAccueil();
+  const f = foods.find(x=>x.id===foodId);
+  askInputModal('Quantité de "'+(f?f.name:'')+'" (g)', '100', (qty)=>{
+    if(!qty || isNaN(qty)) return;
+    if(!journal[state.date]) journal[state.date]={};
+    if(!journal[state.date][mk]) journal[state.date][mk]=[];
+    journal[state.date][mk].push({foodId, qty:+qty});
+    trackRecentFood(foodId);
+    DB.set('journal', journal); renderJournal(); renderAccueil();
+  }, {type:'number'});
 }
 
 /* -- repas (association de plusieurs aliments) -- */
@@ -989,17 +1465,20 @@ function openMealFoodPicker(){
   filterMealFoodPicker();
 }
 function filterMealFoodPicker(){
-  const q = (document.getElementById('mlf-search').value||'').toLowerCase();
-  const list = foods.filter(f=>f.name.toLowerCase().includes(q));
+  const q = (document.getElementById('mlf-search').value||'');
+  const list = sortedFoodsForPicker(q);
   document.getElementById('mlf-list').innerHTML = list.map(f=>`
-    <div class="ex-pick"><div><b>${f.name}</b><div class="small">${f.kcal} kcal /100g</div></div>
+    <div class="ex-pick"><div>${f.fav?'⭐ ':''}<b>${f.name}</b><div class="small">${f.kcal} kcal /100g</div></div>
     <button class="btn btn-acc" onclick="addMealItem('${f.id}')">Ajouter</button></div>`).join('') || '<div class="small">Aucun résultat</div>';
 }
 function addMealItem(foodId){
-  const qty = prompt('Quantité (g)', '100');
-  if(!qty || isNaN(qty)) return;
-  window._mlItems.push({foodId, qty:+qty});
-  renderMealModal();
+  const f = foods.find(x=>x.id===foodId);
+  askInputModal('Quantité de "'+(f?f.name:'')+'" (g)', '100', (qty)=>{
+    if(!qty || isNaN(qty)) return;
+    window._mlItems.push({foodId, qty:+qty});
+    trackRecentFood(foodId);
+    renderMealModal();
+  }, {type:'number'});
 }
 function removeMealItem(i){ window._mlItems.splice(i,1); renderMealModal(); }
 function saveMeal(){
@@ -1018,9 +1497,14 @@ function deleteMeal(id){ meals = meals.filter(m=>m.id!==id); DB.set('meals',meal
 /* ============================================================
    ALIMENTS
 ============================================================ */
+function toggleFoodFav(id){
+  const f = foods.find(x=>x.id===id); if(!f) return;
+  f.fav = !f.fav; DB.set('foods', foods); renderFoods();
+}
 function renderFoods(){
-  document.getElementById('foods-list').innerHTML = foods.map(f=>`
-    <div class="food-item"><div><b>${f.name}</b><div class="fmacros">${fmtNum(f.kcal)} kcal · P${f.prot} G${f.carb} L${f.fat} F${f.fiber||0} /100g</div></div>
+  const sorted = [...foods].sort((a,b)=> (b.fav?1:0)-(a.fav?1:0));
+  document.getElementById('foods-list').innerHTML = sorted.map(f=>`
+    <div class="food-item"><div style="display:flex;align-items:center;gap:8px"><span onclick="toggleFoodFav('${f.id}')" style="cursor:pointer;font-size:16px">${f.fav?'⭐':'☆'}</span><div><b>${f.name}</b><div class="fmacros">${fmtNum(f.kcal)} kcal · P${f.prot} G${f.carb} L${f.fat} F${f.fiber||0} /100g</div></div></div>
     <button class="btn" onclick="openFoodModal('${f.id}')">✎</button></div>`).join('');
 }
 function openFoodModal(id){
@@ -1059,6 +1543,14 @@ async function startBarcodeScan(){
     alert("Scanner non supporté par ce navigateur. Utilise l'ajout manuel ou la photo d'étiquette.");
     return;
   }
+  if(!window.isSecureContext){
+    alert("La caméra nécessite une connexion sécurisée (https) ou localhost. Un fichier ouvert directement (file://) ne peut pas y accéder : héberge l'app (GitHub Pages, Netlify...) ou utilise plutôt '📷 Photo étiquette'.");
+    return;
+  }
+  if(!navigator.mediaDevices || !navigator.mediaDevices.getUserMedia){
+    alert("Caméra non disponible sur ce navigateur/appareil. Utilise l'ajout manuel ou la photo d'étiquette.");
+    return;
+  }
   openModal(`<h3 style="margin-bottom:12px">Scanner un code-barres</h3>
     <video id="scan-video" style="width:100%;border-radius:12px" playsinline autoplay muted></video>
     <div class="small" style="margin-top:8px">Vise le code-barres du produit</div>`);
@@ -1080,7 +1572,7 @@ async function startBarcodeScan(){
       requestAnimationFrame(loop);
     };
     loop();
-  }catch(e){ closeModal(); alert("Caméra indisponible."); }
+  }catch(e){ closeModal(); alert("Caméra indisponible : vérifie que l'accès caméra est autorisé pour ce site et qu'aucune autre appli ne l'utilise déjà."); }
 }
 async function lookupBarcode(code){
   openModal(`<h3>Recherche du produit...</h3>`);
@@ -1145,7 +1637,7 @@ const BASE_EXERCISES = [
 {id:'e15',name:'Soulevé de terre',m:'Dos'},{id:'e16',name:'Soulevé de terre roumain',m:'Dos'},
 {id:'e17',name:'Rowing T-bar',m:'Dos'},{id:'e18',name:'Face pull',m:'Dos'},
 {id:'e19',name:'Développé militaire barre',m:'Épaules'},{id:'e20',name:'Développé militaire haltères',m:'Épaules'},
-{id:'e21',name:'Élévations latérales',m:'Épaules'},{id:'e22',name:'Élévations frontales',m:'Épaules'},
+{id:'e21',name:'Élévations latérales haltères',m:'Épaules'},{id:'e22',name:'Élévations frontales',m:'Épaules'},
 {id:'e23',name:'Oiseau (élévations arrière)',m:'Épaules'},{id:'e24',name:'Développé Arnold',m:'Épaules'},
 {id:'e25',name:'Shrugs (haussements)',m:'Épaules'},
 {id:'e26',name:'Curl biceps barre',m:'Bras'},{id:'e27',name:'Curl biceps haltères',m:'Bras'},
@@ -1181,12 +1673,13 @@ function showExerciseStats(exId){
   const ex = findExercise(exId); if(!ex) return;
   const sessions = [];
   workouts.forEach(w=> w.exercises.filter(e=>e.exId===exId).forEach(e=> sessions.push({date:w.date, sets:e.sets})));
-  let maxW=0, maxVol=0, maxReps=0;
+  let maxW=0, maxVol=0, maxReps=0, max1RM=0;
   sessions.forEach(a=> a.sets.forEach(s=>{
     if((s.poids||0)>maxW) maxW = s.poids||0;
     if((s.reps||0)>maxReps) maxReps = s.reps||0;
     const vol = (s.poids||0)*(s.reps||0);
     if(vol>maxVol) maxVol = vol;
+    if(s.poids && s.reps){ const e1rm = s.poids*(1+s.reps/30); if(e1rm>max1RM) max1RM = e1rm; }
   }));
   const histHtml = [...sessions].reverse().slice(0,20).map(a=>`
     <div class="history-item">
@@ -1199,7 +1692,8 @@ function showExerciseStats(exId){
       <div class="card" style="margin-bottom:0"><div class="small">Record poids</div><div style="font-size:20px;font-weight:800">${maxW||'—'} ${maxW?'kg':''}</div></div>
       <div class="card" style="margin-bottom:0"><div class="small">Record volume (1 série)</div><div style="font-size:20px;font-weight:800">${fmtNum(maxVol)} kg</div></div>
     </div>
-    <div class="small" style="margin-bottom:10px">Meilleur nombre de répétitions : <b style="color:var(--txt)">${maxReps||'—'}</b></div>
+    <div class="small" style="margin-bottom:6px">Meilleur nombre de répétitions : <b style="color:var(--txt)">${maxReps||'—'}</b></div>
+    <div class="small" style="margin-bottom:10px">Estimation 1RM (formule Epley) : <b style="color:var(--txt)">${max1RM? Math.round(max1RM)+' kg' : '—'}</b></div>
     <h3 style="margin-bottom:8px">Historique (${sessions.length} séance${sessions.length>1?'s':''})</h3>
     ${histHtml}
   `);
@@ -1303,19 +1797,36 @@ function normalizeRoutineExercises(r){
   }
   return r.exercises;
 }
+function routineVolumeByMuscle(r){
+  const counts = {};
+  r.exercises.forEach(e=>{
+    const ex = findExercise(e.exId); if(!ex) return;
+    const m = ex.m || 'Autre';
+    counts[m] = (counts[m]||0) + (e.sets? e.sets.length : 0);
+  });
+  return counts;
+}
 function renderRoutines(){
   document.getElementById('routines-list').innerHTML = routines.map(r=>{
     normalizeRoutineExercises(r);
-    const names = r.exercises.map(e=>{
-      const ex = findExercise(e.exId); if(!ex) return '';
-      return `<span class="ex-title-click" onclick="showExerciseStats('${e.exId}')">${ex.name}</span>`;
-    }).filter(Boolean).join(', ');
+    const vol = routineVolumeByMuscle(r);
+    const volHtml = Object.entries(vol).map(([m,c])=>
+      `<span style="display:inline-flex;align-items:center;margin-right:12px;margin-bottom:4px">${exIconHtml(m)}${m} : ${c} série${c>1?'s':''}</span>`
+    ).join('') || '<span class="small">Aucun exercice</span>';
     return `<div class="ex-card">
       <div class="ex-title">${r.name}</div>
-      <div class="small" style="margin-bottom:10px">${names}</div>
+      <div style="margin-bottom:10px">${volHtml}</div>
       <div class="row"><button class="btn btn-acc" onclick="startRoutine('${r.id}')">Démarrer</button><button class="btn" onclick="editRoutine('${r.id}')">Modifier</button><button class="btn btn-danger" onclick="deleteRoutine('${r.id}')">Supprimer</button></div>
     </div>`;
   }).join('') || '<div class="small">Aucune routine créée.</div>';
+}
+function restoreDefaultRoutines(){
+  let changed = false;
+  DEFAULT_ROUTINES.forEach(dr=>{
+    if(!routines.find(r=>r.id===dr.id)){ routines.push(JSON.parse(JSON.stringify(dr))); changed = true; }
+  });
+  if(changed){ DB.set('routines', routines); renderRoutines(); alert('Routines par défaut restaurées.'); }
+  else alert('Toutes les routines par défaut sont déjà présentes.');
 }
 function renderProfilMuscu(){
   document.getElementById('stat-total-seances').textContent = workouts.length;
@@ -1360,9 +1871,11 @@ function renderRoutineModal(){
       ${window._rtExercises.length? window._rtExercises.map((e,i)=>`
         <div class="ex-card">
           <div class="row" style="margin-bottom:8px">
-            <div class="ex-title ex-title-click" style="margin:0" onclick="showExerciseStats('${e.exId}')">${findExercise(e.exId)?.name||'?'}</div>
+            <div class="ex-title ex-title-click" style="margin:0;display:flex;align-items:center" onclick="showExerciseStats('${e.exId}')">${exIconHtml(findExercise(e.exId)?.m)}${findExercise(e.exId)?.name||'?'}</div>
             <button class="del" style="color:var(--fat);font-size:16px" onclick="removeRoutineExercise(${i})">✕</button>
           </div>
+          ${e.altExId? `<div class="small" style="margin-bottom:6px">Alternative : <b>${findExercise(e.altExId)?.name}</b>${e.altSets&&e.altSets.length? ' — '+e.altSets.map(s=>(s.poids||0)+'kg×'+(s.reps||0)).join(', '):''} <span onclick="removeRoutineAlternative(${i})" style="color:var(--fat);cursor:pointer">✕</span></div>`
+            : `<button class="btn" style="margin-bottom:6px;font-size:11px" onclick="openRoutineAltPicker(${i})">+ Alternative</button>`}
           <div id="rt-sets-${i}">${e.sets.map((s,si)=>routineSetRowHtml(i,si,s)).join('')}</div>
           <button class="btn" style="margin-top:4px" onclick="addRoutineSet(${i})">+ Ajouter une série</button>
         </div>`).join('')
@@ -1405,6 +1918,8 @@ function startRoutine(id){
   normalizeRoutineExercises(r);
   state.currentWorkout = {name:r.name, exercises: r.exercises.map(e=>({
     exId:e.exId, name:findExercise(e.exId).name,
+    altExId: e.altExId || null, altName: e.altExId ? (findExercise(e.altExId)?.name||null) : null,
+    altSets: e.altSets ? JSON.parse(JSON.stringify(e.altSets)) : null,
     sets: e.sets.map(s=>({poids:s.poids||'',reps:s.reps||'',repos:s.repos||''}))
   }))};
   openWorkoutScreen();
@@ -1453,7 +1968,7 @@ function filterExercisePicker(){
   const q = (document.getElementById('ep-search').value||'').toLowerCase();
   const list = allExercises().filter(e=>e.name.toLowerCase().includes(q));
   document.getElementById('ep-list').innerHTML = list.map(e=>`
-    <div class="ex-pick"><div class="ex-title-click" onclick="showExerciseStats('${e.id}')"><b>${e.name}</b><div class="small">${e.m}</div></div>
+    <div class="ex-pick"><div class="ex-title-click" onclick="showExerciseStats('${e.id}')" style="display:flex;align-items:center">${exIconHtml(e.m)}<div><b>${e.name}</b><div class="small">${e.m}</div></div></div>
     <button class="btn btn-acc" onclick="pickExercise('${e.id}')">Choisir</button></div>`).join('');
 }
 function pickExercise(id){
@@ -1461,10 +1976,28 @@ function pickExercise(id){
   if(state.picker.target==='routine'){
     window._rtExercises.push({exId:id, sets:[{poids:'',reps:'',repos:''}]});
     renderRoutineModal();
+  } else if(state.picker.target==='routine-alt'){
+    window._rtExercises[state.picker.altIndex].altExId = id;
+    renderRoutineModal();
   } else {
     state.currentWorkout.exercises.push({exId:id, name:ex.name, sets:[]});
     closeModal(); renderWorkoutExercises();
   }
+}
+function openRoutineAltPicker(i){
+  state.picker.altIndex = i;
+  openExercisePicker('routine-alt');
+}
+function removeRoutineAlternative(i){ delete window._rtExercises[i].altExId; renderRoutineModal(); }
+function swapToAlternative(exi){
+  const ex = state.currentWorkout.exercises[exi];
+  if(!ex.altExId) return;
+  const oldId = ex.exId, oldName = ex.name, oldSets = ex.sets;
+  ex.exId = ex.altExId; ex.name = findExercise(ex.altExId).name;
+  ex.altExId = oldId; ex.altName = oldName;
+  ex.sets = (ex.altSets && ex.altSets.length) ? ex.altSets.map(s=>({poids:s.poids||'',reps:s.reps||'',repos:s.repos||'',done:false})) : [{poids:'',reps:'',repos:'',done:false}];
+  ex.altSets = oldSets.map(s=>({poids:s.poids,reps:s.reps,repos:s.repos}));
+  renderWorkoutExercises();
 }
 function openCustomExerciseModal(){
   const muscles = ['Pectoraux','Dos','Épaules','Bras','Jambes','Abdominaux','Cardio','Autre'];
@@ -1541,16 +2074,23 @@ function checkAndShowSetPR(exi,si){
   }
 }
 function onSetRestCheck(exi,si,checked){
-  const s = state.currentWorkout.exercises[exi].sets[si];
+  const ex = state.currentWorkout.exercises[exi];
+  const s = ex.sets[si];
   s.done = checked;
   const block = document.getElementById('setblock-'+exi+'-'+si);
   if(block) block.classList.toggle('set-done', checked);
   if(checked){
     checkAndShowSetPR(exi,si);
+    if(ex.linkedNext) return; // superset : on enchaîne direct sur l'exercice suivant, pas de repos ici
     startRestTimer(s.repos>0?s.repos:90, 'restchk-'+exi+'-'+si);
   } else {
     stopRestTimer();
   }
+}
+function toggleSuperset(exi){
+  const ex = state.currentWorkout.exercises[exi];
+  ex.linkedNext = !ex.linkedNext;
+  renderWorkoutExercises();
 }
 
 /* -- live workout sets -- */
@@ -1565,20 +2105,27 @@ function renderWorkoutExercises(){
   const html = state.currentWorkout.exercises.map((ex,exi)=>{
     const prev = previousSetsFor(ex.exId);
     return `<div class="ex-card">
-      <div class="ex-title ex-title-click" onclick="showExerciseStats('${ex.exId}')">${ex.name}</div>
+      <div class="row" style="margin-bottom:4px">
+        <div class="ex-title ex-title-click" style="margin:0;display:flex;align-items:center" onclick="showExerciseStats('${ex.exId}')">${exIconHtml(findExercise(ex.exId)?.m)}${ex.name}</div>
+        ${ex.altExId? `<button class="btn" style="padding:6px 10px;font-size:11px" onclick="swapToAlternative(${exi})">⇄ ${ex.altName||findExercise(ex.altExId)?.name}</button>` : ''}
+      </div>
+      ${exi<state.currentWorkout.exercises.length-1? `<button class="btn" style="padding:6px 10px;font-size:11px;margin-bottom:6px" onclick="toggleSuperset(${exi})">${ex.linkedNext? '🔗 Superset ✕' : '🔗 Lier en superset'}</button>` : ''}
+      ${ex.linkedNext? `<div class="small" style="color:var(--muscu);margin-bottom:6px">🔗 En superset avec : ${state.currentWorkout.exercises[exi+1]?.name||''}</div>` : ''}
       ${prev? `<div class="prev-hint">Dernière fois : ${prev.map(s=>s.poids+'kg × '+s.reps).join(' · ')}</div>`:''}
-      <div id="sets-${exi}">${ex.sets.map((s,si)=>setRowHtml(exi,si,s)).join('')}</div>
+      <div id="sets-${exi}">${ex.sets.map((s,si)=>setRowHtml(exi,si,s,prev&&prev[si]?prev[si]:null)).join('')}</div>
       <button class="btn" onclick="addSet(${exi})">+ Ajouter une série</button>
     </div>`;
   }).join('');
   document.getElementById('workout-exercises').innerHTML = html || '<div class="small">Ajoute un exercice pour commencer.</div>';
 }
-function setRowHtml(exi,si,s){
+function setRowHtml(exi,si,s,prevSet){
+  const phKg = prevSet&&prevSet.poids? prevSet.poids : 'kg';
+  const phReps = prevSet&&prevSet.reps? prevSet.reps : 'reps';
   return `<div class="set-block${s.done?' set-done':''}" id="setblock-${exi}-${si}">
   <div class="set-row">
     <div class="idx">${si+1}</div>
-    <input type="number" placeholder="kg" value="${s.poids||''}" onchange="updateSet(${exi},${si},'poids',this.value)">
-    <input type="number" placeholder="reps" value="${s.reps||''}" onchange="updateSet(${exi},${si},'reps',this.value)">
+    <input type="number" placeholder="${phKg}" value="${s.poids||''}" onchange="updateSet(${exi},${si},'poids',this.value)">
+    <input type="number" placeholder="${phReps}" value="${s.reps||''}" onchange="updateSet(${exi},${si},'reps',this.value)">
     <input type="text" inputmode="numeric" placeholder="repos (2=2min, 3:20, 3,20)" value="${formatRepos(s.repos)}" onchange="updateSet(${exi},${si},'repos',this.value)">
     <input type="checkbox" class="rest-chk" id="restchk-${exi}-${si}" title="Valider la série (lance le repos)" ${s.done?'checked':''} onchange="onSetRestCheck(${exi},${si},this.checked)">
     <div class="del" onclick="delSet(${exi},${si})">✕</div>
@@ -1711,9 +2258,10 @@ function parseCSVLine(line, sep){
 }
 /* -- sauvegarde complète JSON (profil, objectifs, poids, aliments, journal, routines, séances) -- */
 function exportDataJSON(){
+  profile.lastExportAt = Date.now(); DB.set('profile', profile);
   const backup = {
     app:'FBL', version:1, exportedAt:new Date().toISOString(),
-    profile, weightHistory, measurements, foods, meals, journal, routines, workouts, customExercises
+    profile, weightHistory, measurements, foods, meals, journal, routines, workouts, customExercises, hydration
   };
   const json = JSON.stringify(backup, null, 2);
   const blob = new Blob([json], {type:'application/json'});
@@ -1722,6 +2270,7 @@ function exportDataJSON(){
   a.href = url; a.download = 'fbl_sauvegarde_'+todayStr()+'.json';
   document.body.appendChild(a); a.click(); document.body.removeChild(a);
   URL.revokeObjectURL(url);
+  updateBackupBadge();
 }
 function onImportJSONFile(ev){
   const file = ev.target.files[0]; ev.target.value=''; if(!file) return;
@@ -1747,6 +2296,7 @@ function importDataJSON(text){
   routines = data.routines || [];
   workouts = data.workouts || [];
   customExercises = data.customExercises || [];
+  hydration = data.hydration || {};
 
   DB.set('profile', profile);
   DB.set('weightHistory', weightHistory);
@@ -1757,6 +2307,7 @@ function importDataJSON(text){
   DB.set('routines', routines);
   DB.set('workouts', workouts);
   DB.set('customExercises', customExercises);
+  DB.set('hydration', hydration);
 
   buildExerciseSelect();
   if(profile.name) document.getElementById('topbar-user').textContent = profile.name[0].toUpperCase();
