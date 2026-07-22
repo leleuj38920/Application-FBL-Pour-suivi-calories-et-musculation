@@ -300,7 +300,7 @@ canvas.chart{width:100%;height:140px;}
       </div>
 
       <div class="card">
-        <div class="row"><h3 style="margin:0">Poids & masse grasse</h3><div><button class="btn" style="margin-right:6px" onclick="openMeasurementsModal()">📏 Mensurations</button><button class="btn" style="margin-right:6px" onclick="openPhotoCompareModal()">📷 Comparer</button><button class="btn" onclick="openWeightModal()">+ Ajouter</button></div></div>
+        <div class="row" style="flex-wrap:wrap"><h3 style="margin:0">Poids & masse grasse</h3><div style="display:flex;gap:6px"><button class="btn" style="flex:1;white-space:nowrap;text-align:center" onclick="openMeasurementsModal()">📏 Mensurations</button><button class="btn" style="flex:1;white-space:nowrap;text-align:center" onclick="openPhotoCompareModal()">📷 Comparer</button><button class="btn" style="flex:1;white-space:nowrap;text-align:center" onclick="openWeightModal()">+ Ajouter</button></div></div>
         <div class="row" style="margin-top:10px">
           <div><div class="small">Poids actuel</div><div style="font-size:20px;font-weight:800" id="weight-disp">—</div></div>
           <div style="text-align:right"><div class="small">Masse grasse</div><div style="font-size:20px;font-weight:800" id="bf-disp">—</div></div>
@@ -516,7 +516,7 @@ if(!foods){
 
 const DEFAULT_CUSTOM_EXERCISES = [
   {id:'c_crunch_poulie', name:'Crunch poulie', m:'Abdominaux'},
-  {id:'c_sdt_jt_smith', name:'Soulevé de terre jambes tendues (Smith)', m:'Jambes'}
+  {id:'c_sdt_jt_smith', name:'Soulevé de terre jambes tendues (Smith)', m:'Ischios'}
 ];
 let _exChanged=false;
 DEFAULT_CUSTOM_EXERCISES.forEach(ce=>{ if(!customExercises.find(e=>e.id===ce.id)){ customExercises.push(ce); _exChanged=true; } });
@@ -573,6 +573,33 @@ if(!profile.routinesPatch2){
   }
   profile.routinesPatch2 = true;
   DB.set('routines', routines); DB.set('profile', profile);
+}
+
+/* Migration : éclatement des anciens groupes "Bras"/"Jambes" en groupes précis sur les exercices persos déjà créés */
+if(!profile.muscleSplitPatch){
+  const guessMuscle = (name, old) => {
+    const n = (name||'').toLowerCase();
+    if(old==='Bras'){
+      if(/tricep|dips|extension|barre au front|pompes serrées/.test(n)) return 'Triceps';
+      return 'Biceps';
+    }
+    if(old==='Jambes'){
+      if(/mollet/.test(n)) return 'Mollets';
+      if(/fessier|hip thrust|glute/.test(n)) return 'Fessiers';
+      if(/adducteur/.test(n)) return 'Adducteurs';
+      if(/abducteur/.test(n)) return 'Fessiers';
+      if(/leg curl|ischio|jambes tendues|nordic/.test(n)) return 'Ischios';
+      return 'Quadriceps';
+    }
+    return old;
+  };
+  let changed = false;
+  customExercises.forEach(e=>{
+    if(e.m==='Bras' || e.m==='Jambes'){ e.m = guessMuscle(e.name, e.m); changed = true; }
+  });
+  if(changed) DB.set('customExercises', customExercises);
+  profile.muscleSplitPatch = true;
+  DB.set('profile', profile);
 }
 
 const PhotoDB = (function(){
@@ -660,7 +687,7 @@ function formatThousandsInput(el){
   el.value = raw ? Number(raw).toLocaleString('fr-FR') : '';
 }
 function exIconHtml(m){
-  const colors={Pectoraux:'var(--cal)',Dos:'var(--fiber)','Épaules':'var(--carb)',Bras:'var(--fat)',Jambes:'var(--muscu)',Abdominaux:'var(--prot)',Cardio:'var(--gold)'};
+  const colors={Pectoraux:'var(--cal)',Dos:'var(--fiber)','Épaules':'var(--carb)',Biceps:'var(--fat)',Triceps:'#c77b3a',Quadriceps:'var(--muscu)',Ischios:'#7a5cc9',Fessiers:'#c95c8f',Mollets:'#4f9bc4',Adducteurs:'#8a8f5c',Abdominaux:'var(--prot)',Cardio:'var(--gold)'};
   const c = colors[m]||'var(--txt-dim)';
   return '<span class="ex-ic" style="background:'+c+'">'+(m?m[0]:'?')+'</span>';
 }
@@ -1640,16 +1667,16 @@ const BASE_EXERCISES = [
 {id:'e21',name:'Élévations latérales haltères',m:'Épaules'},{id:'e22',name:'Élévations frontales',m:'Épaules'},
 {id:'e23',name:'Oiseau (élévations arrière)',m:'Épaules'},{id:'e24',name:'Développé Arnold',m:'Épaules'},
 {id:'e25',name:'Shrugs (haussements)',m:'Épaules'},
-{id:'e26',name:'Curl biceps barre',m:'Bras'},{id:'e27',name:'Curl biceps haltères',m:'Bras'},
-{id:'e28',name:'Curl marteau',m:'Bras'},{id:'e29',name:'Curl pupitre',m:'Bras'},
-{id:'e30',name:'Extension triceps poulie',m:'Bras'},{id:'e31',name:'Extension triceps nuque',m:'Bras'},
-{id:'e32',name:'Barre au front',m:'Bras'},{id:'e33',name:'Dips triceps',m:'Bras'},
-{id:'e34',name:'Squat barre',m:'Jambes'},{id:'e35',name:'Squat avant',m:'Jambes'},
-{id:'e36',name:'Presse à cuisses',m:'Jambes'},{id:'e37',name:'Fentes marchées',m:'Jambes'},
-{id:'e38',name:'Fentes bulgares',m:'Jambes'},{id:'e39',name:'Leg extension',m:'Jambes'},
-{id:'e40',name:'Leg curl',m:'Jambes'},{id:'e41',name:'Soulevé de terre jambes tendues',m:'Jambes'},
-{id:'e42',name:'Hip thrust',m:'Jambes'},{id:'e43',name:'Mollets debout',m:'Jambes'},
-{id:'e44',name:'Mollets assis',m:'Jambes'},
+{id:'e26',name:'Curl biceps barre',m:'Biceps'},{id:'e27',name:'Curl biceps haltères',m:'Biceps'},
+{id:'e28',name:'Curl marteau',m:'Biceps'},{id:'e29',name:'Curl pupitre',m:'Biceps'},
+{id:'e30',name:'Extension triceps poulie',m:'Triceps'},{id:'e31',name:'Extension triceps nuque',m:'Triceps'},
+{id:'e32',name:'Barre au front',m:'Triceps'},{id:'e33',name:'Dips triceps',m:'Triceps'},
+{id:'e34',name:'Squat barre',m:'Quadriceps'},{id:'e35',name:'Squat avant',m:'Quadriceps'},
+{id:'e36',name:'Presse à cuisses',m:'Quadriceps'},{id:'e37',name:'Fentes marchées',m:'Quadriceps'},
+{id:'e38',name:'Fentes bulgares',m:'Quadriceps'},{id:'e39',name:'Leg extension',m:'Quadriceps'},
+{id:'e40',name:'Leg curl',m:'Ischios'},{id:'e41',name:'Soulevé de terre jambes tendues',m:'Ischios'},
+{id:'e42',name:'Hip thrust',m:'Fessiers'},{id:'e43',name:'Mollets debout',m:'Mollets'},
+{id:'e44',name:'Mollets assis',m:'Mollets'},
 {id:'e45',name:'Crunch',m:'Abdominaux'},{id:'e46',name:'Relevé de jambes',m:'Abdominaux'},
 {id:'e47',name:'Gainage planche',m:'Abdominaux'},{id:'e48',name:'Russian twist',m:'Abdominaux'},
 {id:'e49',name:'Roulette abdominale',m:'Abdominaux'},
@@ -1661,12 +1688,12 @@ const BASE_EXERCISES = [
 {id:'e60',name:'Tirage vertical prise serrée machine',m:'Dos'},{id:'e61',name:'Pull-over poulie haute',m:'Dos'},
 {id:'e62',name:'Développé épaules machine',m:'Épaules'},{id:'e63',name:'Élévations latérales poulie',m:'Épaules'},
 {id:'e64',name:'Élévations latérales machine',m:'Épaules'},{id:'e65',name:'Reverse pec deck (arrière épaules)',m:'Épaules'},
-{id:'e66',name:'Curl biceps machine',m:'Bras'},{id:'e67',name:'Curl corde triceps (poulie)',m:'Bras'},
-{id:'e68',name:'Curl biceps poulie basse',m:'Bras'},{id:'e69',name:'Extension triceps corde poulie haute',m:'Bras'},
-{id:'e70',name:'Triceps poulie prise marteau',m:'Bras'},{id:'e71',name:'Dips machine assistée',m:'Bras'},
-{id:'e72',name:'Presse à cuisses horizontale (machine)',m:'Jambes'},{id:'e73',name:'Hack squat machine',m:'Jambes'},
-{id:'e74',name:'Adducteurs machine',m:'Jambes'},{id:'e75',name:'Abducteurs machine',m:'Jambes'},
-{id:'e76',name:'Presse à mollets machine',m:'Jambes'},{id:'e77',name:'Smith machine squat',m:'Jambes'},
+{id:'e66',name:'Curl biceps machine',m:'Biceps'},{id:'e67',name:'Curl corde triceps (poulie)',m:'Triceps'},
+{id:'e68',name:'Curl biceps poulie basse',m:'Biceps'},{id:'e69',name:'Extension triceps corde poulie haute',m:'Triceps'},
+{id:'e70',name:'Triceps poulie prise marteau',m:'Triceps'},{id:'e71',name:'Dips machine assistée',m:'Triceps'},
+{id:'e72',name:'Presse à cuisses horizontale (machine)',m:'Quadriceps'},{id:'e73',name:'Hack squat machine',m:'Quadriceps'},
+{id:'e74',name:'Adducteurs machine',m:'Adducteurs'},{id:'e75',name:'Abducteurs machine',m:'Fessiers'},
+{id:'e76',name:'Presse à mollets machine',m:'Mollets'},{id:'e77',name:'Smith machine squat',m:'Quadriceps'},
 {id:'e78',name:'Crunch machine',m:'Abdominaux'},{id:'e79',name:'Rotation du buste machine',m:'Abdominaux'},
 ];
 function showExerciseStats(exId){
@@ -2000,7 +2027,7 @@ function swapToAlternative(exi){
   renderWorkoutExercises();
 }
 function openCustomExerciseModal(){
-  const muscles = ['Pectoraux','Dos','Épaules','Bras','Jambes','Abdominaux','Cardio','Autre'];
+  const muscles = ['Pectoraux','Dos','Épaules','Biceps','Triceps','Quadriceps','Ischios','Fessiers','Mollets','Adducteurs','Abdominaux','Cardio','Autre'];
   openModal(`
     <h3 style="margin-bottom:12px">Nouvel exercice</h3>
     <div class="field"><label>Nom</label><input id="ce-name"></div>
